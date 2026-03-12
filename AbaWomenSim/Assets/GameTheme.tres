@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://c57q6qcyw6c3e"]
+
+[ext_resource type="FontFile" uid="uid://ctrycnc6rlr2u" path="res://AbaWomenSim/Assets/Montreal-Bold.ttf" id="1_v8fq1"]
+
+[resource]
+default_font = ExtResource("1_v8fq1")
+default_font_size = 50

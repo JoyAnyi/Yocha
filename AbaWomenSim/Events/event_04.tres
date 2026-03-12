@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://ck8pyvm4nrnhs"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_1tj67"]
+
+[resource]
+script = ExtResource("1_1tj67")
+title = ""
+description = ""
+price_multiplier = 0.0
+option_a_text = ""
+option_b_text = ""
+option_a_good_name = "salt"
+option_a_quantity = 2
+option_a_risk_change = 3
+option_b_risk_change = 1
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

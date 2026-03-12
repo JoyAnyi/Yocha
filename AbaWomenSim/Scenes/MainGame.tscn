@@ -1,0 +1,226 @@
+[gd_scene format=3 uid="uid://xr8050hyyt81"]
+
+[ext_resource type="Script" uid="uid://cg501hww2vopi" path="res://Yocha/AbaWomenSim/Scripts/GameManager.gd" id="1_eosr6"]
+[ext_resource type="Theme" uid="uid://c57q6qcyw6c3e" path="res://Yocha/AbaWomenSim/Assets/GameTheme.tres" id="1_tl6sc"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="2_xr3nn"]
+[ext_resource type="Resource" uid="uid://bvdrhjmarcen8" path="res://Yocha/AbaWomenSim/Events/Event_01_Oloko_Market.tres" id="4_x4028"]
+[ext_resource type="Script" uid="uid://h1lk51ahb7u8" path="res://Yocha/AbaWomenSim/Scripts/MarketManager.gd" id="5_ci6wu"]
+[ext_resource type="Resource" uid="uid://wmbl0gc1hklv" path="res://Yocha/AbaWomenSim/Events/event_02.tres" id="5_jpbm4"]
+[ext_resource type="Resource" uid="uid://bci7h5tx6ldko" path="res://Yocha/AbaWomenSim/Events/event_03.tres" id="6_ugwnq"]
+[ext_resource type="Resource" uid="uid://ck8pyvm4nrnhs" path="res://Yocha/AbaWomenSim/Events/event_04.tres" id="7_dn7gj"]
+[ext_resource type="Resource" uid="uid://bb0f18tmc8836" path="res://Yocha/AbaWomenSim/Events/event_05.tres" id="8_ec6m2"]
+[ext_resource type="Resource" uid="uid://dfucfsj8dpfw2" path="res://Yocha/AbaWomenSim/Events/event_06.tres" id="9_s87t3"]
+
+[sub_resource type="Resource" id="Resource_s87t3"]
+script = ExtResource("2_xr3nn")
+title = "Oloko Women Gather in the Square"
+description = "Women gather in the town square after hearing about livestock counting.
+Rumors of taxation spread, making traders wary. Prices fluctuate as buyers hesitate.
+Merchants must decide whether to act opportunistically or play it safe."
+price_multiplier = 1.3
+risk_level = 3
+option_a_text = " Buy 10 mudu of garri quickly"
+option_b_text = " Observe market trends and wait"
+option_a_good_name = "garri"
+option_a_quantity = 2
+option_a_risk_change = 3
+option_b_risk_change = 1
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"
+
+[sub_resource type="Resource" id="Resource_68ygn"]
+script = ExtResource("2_xr3nn")
+title = "The Argument at Oloko"
+description = "A loud argument breaks out between Nwanyeruwa and the warrant chief's messenger, Mark Emereuwa. She refuses to be counted for taxation, insisting that women should not be taxed. Traders stop to watch as word spreads quickly through the market. Some buyers begin purchasing goods in panic, fearing trouble ahead."
+price_multiplier = 1.6
+risk_level = 4
+option_a_text = " Sell 3 mudu of garri to anxious buyers"
+option_b_text = " Keep your goods and observe the growing argument"
+option_a_good_name = "garri"
+option_a_quantity = -3
+option_a_is_buy = false
+option_a_risk_change = 3
+option_b_risk_change = 2
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"
+
+[sub_resource type="SystemFont" id="SystemFont_psig4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_xr3nn"]
+line_spacing = 40.0
+font = SubResource("SystemFont_psig4")
+font_size = 70
+
+[sub_resource type="LabelSettings" id="LabelSettings_tl6sc"]
+font_size = 66
+font_color = Color(1, 1, 0.24313726, 1)
+outline_color = Color(1, 1, 0.93333334, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tl6sc"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.9706139, 0.77241856, 0.18335798, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eu5ij"]
+bg_color = Color(0.000113828006, 0.00011382805, 0.00011382793, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dpp2"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(0.9467285, 0.7834732, 0.22067747, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_eu5ij"]
+font_size = 67
+
+[sub_resource type="LabelSettings" id="LabelSettings_6dpp2"]
+font_size = 50
+
+[node name="MainGame" type="Control" unique_id=2112277817]
+custom_minimum_size = Vector2(1152, 648)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 10
+size_flags_vertical = 6
+theme = ExtResource("1_tl6sc")
+script = ExtResource("1_eosr6")
+timeline = Array[ExtResource("2_xr3nn")]([ExtResource("4_x4028"), ExtResource("5_jpbm4"), ExtResource("6_ugwnq"), ExtResource("7_dn7gj"), SubResource("Resource_s87t3"), ExtResource("8_ec6m2"), SubResource("Resource_68ygn"), ExtResource("9_s87t3")])
+
+[node name="MarketManager" type="Node" parent="." unique_id=1876693958]
+script = ExtResource("5_ci6wu")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=523095635]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.13542569, 0.01881401, 0.13119602, 0.92941177)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1541362613]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="MainLayout" type="HBoxContainer" parent="MarginContainer" unique_id=235223247]
+layout_mode = 2
+theme_override_constants/separation = 50
+
+[node name="StagePanel" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=1525401079]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GameTitle" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=566533874]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9607843, 0.94509804, 0.22352941, 1)
+theme_override_colors/font_outline_color = Color(0.9882353, 0.9098039, 0.22745098, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 2
+theme_override_font_sizes/font_size = 60
+text = "YОСНА"
+
+[node name="EventTitle" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=906806196]
+layout_mode = 2
+size_flags_vertical = 6
+text = "YOCHA"
+label_settings = SubResource("LabelSettings_xr3nn")
+autowrap_mode = 2
+
+[node name="StoryScroll" type="ScrollContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1188431560]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+
+[node name="EventDescription" type="RichTextLabel" parent="MarginContainer/MainLayout/StagePanel/StoryScroll" unique_id=644149419]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+fit_content = true
+autowrap_mode = 2
+
+[node name="EventImage" type="TextureRect" parent="MarginContainer/MainLayout/StagePanel" unique_id=2059433039]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 5.0
+expand_mode = 1
+stretch_mode = 5
+
+[node name="FeedbackLabel" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=1811294197]
+layout_mode = 2
+text = "Result: "
+label_settings = SubResource("LabelSettings_tl6sc")
+
+[node name="Space" type="Control" parent="MarginContainer/MainLayout/StagePanel" unique_id=960458236]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ButtonContainer" type="VBoxContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=2055688791]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="ButtonOptionA" type="Button" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1930034]
+custom_minimum_size = Vector2(600, 145)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_tl6sc")
+theme_override_colors/font_color = Color(0.9749437, 0.8775981, 0.405172, 1)
+theme_override_colors/font_focus_color = Color(0.9666117, 0.9740494, 0.67035335, 1)
+theme_override_colors/font_hover_color = Color(0.978218, 0.9116732, 0.35545, 1)
+theme_override_colors/icon_hover_color = Color(1, 0.74509805, 1, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_tl6sc")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_eu5ij")
+text = "Option A"
+
+[node name="ButtonOptionB" type="Button" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1845878108]
+custom_minimum_size = Vector2(600, 145)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.95908576, 0.8840834, 0.41363144, 1)
+theme_override_colors/font_hover_color = Color(0.99607843, 0.8666667, 0.21960784, 1)
+theme_override_styles/normal = SubResource("StyleBoxFlat_6dpp2")
+text = "Option B"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1897700978]
+layout_mode = 2
+
+[node name="RestartButton" type="Button" parent="MarginContainer/MainLayout/StagePanel" unique_id=96358320]
+layout_mode = 2
+text = "Play Again"
+
+[node name="DashboardPanel" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=2136999456]
+custom_minimum_size = Vector2(400, 0)
+layout_mode = 2
+
+[node name="MoneyLabel" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=956064674]
+layout_mode = 2
+text = "₦100,000"
+label_settings = SubResource("LabelSettings_eu5ij")
+
+[node name="GoodsLabel" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=1116526995]
+layout_mode = 2
+text = "INVENTORY"
+label_settings = SubResource("LabelSettings_6dpp2")
+
+[node name="InventoryGrid" type="GridContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=864118928]
+layout_mode = 2
+columns = 3
+
+[node name="StoryAudio" type="AudioStreamPlayer" parent="." unique_id=663411801]

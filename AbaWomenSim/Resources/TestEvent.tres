@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://bn6l86bu6pqcn"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_m5m2j"]
+
+[resource]
+script = ExtResource("1_m5m2j")
+title = "Market Crash"
+description = "Priceses are falling!"
+risk_level = 1
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"
