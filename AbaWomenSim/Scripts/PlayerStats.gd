@@ -32,7 +32,7 @@ func update_risk(amount: int):
 func update_goods(amount: int):
 	goods += amount
 	
-# CLAMP is a helper math function. It ensures 'goods' never goes below 0 or above
+# CLAMP is a helper math function. It ensures 'goods' never goes below 0 or above 50
 	goods = clamp(goods, 0, max_inventory)
 	stats_updated.emit()
 	

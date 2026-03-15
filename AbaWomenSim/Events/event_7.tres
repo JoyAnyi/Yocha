@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://cpb8f0qy7g1et"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_p087f"]
+
+[resource]
+script = ExtResource("1_p087f")
+title = "Palm-Leaf Messages Spread."
+description = "News of the argument spreads quickly. Women begin sending palm-leaf messages to nearby villages, a traditional signal calling others to gather. Groups of women begin arriving in increasing numbers. The market becomes crowded as travelers buy food and supplies before attending the gatherings."
+price_multiplier = 1.8
+risk_level = 4
+option_a_text = " Sell 3 units of palm oil to traveling groups"
+option_b_text = " Sell 3 units of palm oil to traveling groups"
+option_a_good_name = "palm_oil"
+option_a_quantity = -3
+option_a_is_buy = false
+option_a_risk_change = 3
+option_b_risk_change = 2
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

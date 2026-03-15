@@ -4,13 +4,16 @@
 
 [resource]
 script = ExtResource("1_1tj67")
-title = ""
-description = ""
-price_multiplier = 0.0
-option_a_text = ""
-option_b_text = ""
-option_a_good_name = "salt"
-option_a_quantity = 2
+title = "Oloko Women Gather in the Square."
+description = "Women gather in the town square after hearing about livestock counting.
+Rumors of taxation spread, making traders wary. Prices fluctuate as buyers hesitate.
+Merchants must decide whether to act opportunistically or play it safe."
+price_multiplier = 1.3
+risk_level = 3
+option_a_text = " Buy 10 mudu of garri quickly."
+option_b_text = " Observe market trends and wait"
+option_a_good_name = "garri"
+option_a_quantity = 20
 option_a_risk_change = 3
 option_b_risk_change = 1
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

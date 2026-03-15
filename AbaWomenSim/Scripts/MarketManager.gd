@@ -14,7 +14,7 @@ class_name MarketManager
 
 # Base historical prices (approximate simulation values)
 var base_prices = {
-	"palm_oil": 500,
+	"palm_oil": 300,
 	"garri": 200,
 	"salt": 100,
 }

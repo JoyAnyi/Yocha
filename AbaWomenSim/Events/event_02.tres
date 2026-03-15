@@ -8,9 +8,9 @@ title = "Suspicion of Direct Taxation"
 description = "Captain Cook begins revising the nominal roll for taxation in Oloko, Bende, and Umuahia.
 Women fear that this is a prelude to taxing them, just as men were taxed the previous year.
 Rumors spread quickly, causing tension in the markets and neighborhoods."
-option_a_text = " Buy 6 mudu of garri at low price"
+option_a_text = " Buy 15 mudu of garri at low price"
 option_b_text = " Wait and observe market tension"
 option_a_good_name = "garri"
-option_a_quantity = 2
+option_a_quantity = 15
 option_a_risk_change = 1
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

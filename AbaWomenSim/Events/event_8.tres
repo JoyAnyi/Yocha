@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dmbe8rtaq2yxq"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_iv7f1"]
+
+[resource]
+script = ExtResource("1_iv7f1")
+title = "Women Surround the Warrant Chief."
+description = "Hundreds of women gather outside the compound of a warrant chief. They sing protest songs and demand answers about the rumored taxation of women. The demonstration is loud and tense. Some traders close their stalls early, while others try to sell goods quickly before the situation worsens."
+price_multiplier = 2.0
+risk_level = 5
+option_a_text = " Sell 5 units of palm oil quickly before stalls close"
+option_b_text = " Close your stall early and watch the protest"
+option_a_good_name = "palm_oil"
+option_a_quantity = -2
+option_a_is_buy = false
+option_a_risk_change = 3
+option_b_risk_change = 2
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"
