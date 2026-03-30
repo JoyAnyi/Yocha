@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://bvdrhjmarcen8"]
 
+[ext_resource type="Texture2D" uid="uid://camvp88qw2025" path="res://Yocha/Images/Women_selling_goods_202603280039.jpeg" id="1_7h4bb"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_71g1o"]
 
 [resource]
@@ -7,6 +8,7 @@ script = ExtResource("1_71g1o")
 title = "November 18, 1929  Oloko Market"
 description = "The Oloko market is alive with noise.
 Palm oil traders argue loudly over falling prices. Garri sellers complain that buyers are cautious. Rumors spread quickly a British agent has been asking women questions about property. Some traders seem nervous. But business must continue. Today’s palm oil price is low."
+event_image = ExtResource("1_7h4bb")
 option_a_text = "Buy 15 units of palm oil at a low price"
 option_b_text = "Wait and observe the tension"
 option_a_good_name = "palm_oil"

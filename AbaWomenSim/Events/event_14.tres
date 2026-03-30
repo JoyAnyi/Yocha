@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://b202xl807ghqv"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_u3uty"]
+
+[resource]
+script = ExtResource("1_u3uty")
+title = "Aba Commission of Inquiry"
+description = "Following the unrest, colonial authorities begin an official investigation into the protests. Witnesses are called to speak about what happened. Traders in the market discuss the events and hope for changes. Business slowly stabilizes as fear begins to fade."
+price_multiplier = 2.0
+risk_level = 4
+option_a_text = " Sell 2 units of palm oil as trading stabilizes"
+option_b_text = " Buy 2 units of garri as prices begin to normalize"
+option_a_good_name = "palm_oil"
+option_a_quantity = 2
+option_a_is_buy = false
+option_a_risk_change = 1
+option_b_good_name = "garri"
+option_b_quantity = 2
+option_b_risk_change = 1
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

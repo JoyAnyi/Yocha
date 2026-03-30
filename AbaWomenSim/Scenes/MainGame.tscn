@@ -13,6 +13,10 @@
 [ext_resource type="Resource" uid="uid://cpb8f0qy7g1et" path="res://Yocha/AbaWomenSim/Events/event_7.tres" id="10_68ygn"]
 [ext_resource type="Resource" uid="uid://dmbe8rtaq2yxq" path="res://Yocha/AbaWomenSim/Events/event_8.tres" id="11_eljef"]
 [ext_resource type="Resource" uid="uid://ban34h1v5f1oo" path="res://Yocha/AbaWomenSim/Events/event_9.tres" id="12_bxye6"]
+[ext_resource type="Resource" uid="uid://walf3sq1wdei" path="res://Yocha/AbaWomenSim/Events/event_12.tres" id="13_gijy1"]
+[ext_resource type="Resource" uid="uid://brmhadbks6ugs" path="res://Yocha/AbaWomenSim/Events/event_13.tres" id="14_lopmg"]
+[ext_resource type="Resource" uid="uid://b202xl807ghqv" path="res://Yocha/AbaWomenSim/Events/event_14.tres" id="15_lopmg"]
+[ext_resource type="Resource" uid="uid://ctpu6s6hid7ri" path="res://Yocha/AbaWomenSim/Events/event_15.tres" id="16_q7iaj"]
 
 [sub_resource type="SystemFont" id="SystemFont_psig4"]
 subpixel_positioning = 0
@@ -21,6 +25,9 @@ subpixel_positioning = 0
 line_spacing = 40.0
 font = SubResource("SystemFont_psig4")
 font_size = 70
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q7iaj"]
+load_path = "res://.godot/imported/Women_selling_goods_202603280032.jpeg-47eebe8eb95642c5b168cc656f73172e.ctex"
 
 [sub_resource type="LabelSettings" id="LabelSettings_tl6sc"]
 font_size = 66
@@ -64,7 +71,7 @@ size_flags_horizontal = 10
 size_flags_vertical = 6
 theme = ExtResource("1_tl6sc")
 script = ExtResource("1_eosr6")
-timeline = Array[ExtResource("2_xr3nn")]([ExtResource("4_x4028"), ExtResource("5_jpbm4"), ExtResource("6_ugwnq"), ExtResource("6_ugwnq"), ExtResource("7_dn7gj"), ExtResource("8_ec6m2"), ExtResource("9_s87t3"), ExtResource("9_s87t3"), ExtResource("10_68ygn"), ExtResource("11_eljef"), ExtResource("12_bxye6")])
+timeline = Array[ExtResource("2_xr3nn")]([ExtResource("4_x4028"), ExtResource("5_jpbm4"), ExtResource("6_ugwnq"), ExtResource("6_ugwnq"), ExtResource("7_dn7gj"), ExtResource("8_ec6m2"), ExtResource("9_s87t3"), ExtResource("9_s87t3"), ExtResource("10_68ygn"), ExtResource("11_eljef"), ExtResource("12_bxye6"), ExtResource("13_gijy1"), ExtResource("14_lopmg"), ExtResource("15_lopmg"), ExtResource("16_q7iaj"), null])
 
 [node name="MarketManager" type="Node" parent="." unique_id=1876693958]
 script = ExtResource("5_ci6wu")
@@ -90,7 +97,7 @@ theme_override_constants/margin_top = 50
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 50
 
-[node name="MainLayout" type="HBoxContainer" parent="MarginContainer" unique_id=235223247]
+[node name="MainLayout" type="HBoxContainer" parent="MarginContainer" unique_id=354954834]
 layout_mode = 2
 theme_override_constants/separation = 50
 
@@ -131,6 +138,7 @@ autowrap_mode = 2
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
+texture = SubResource("CompressedTexture2D_q7iaj")
 expand_mode = 1
 stretch_mode = 5
 

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://4b0mv81sf424"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_j3d4e"]
+
+[resource]
+script = ExtResource("1_j3d4e")
+title = "Warrant Chiefs Begin to Resign."
+description = "Warrant Chiefs Begin to Resign. Some Warrant Chiefs begin to step down after days of relentless protests. Women celebrate in the streets, singing and dancing as authority weakens. Markets are unstable. Some traders flee, while others rush to take advantage of the confusion. No one knows what will happen next."
+price_multiplier = 2.2
+risk_level = 6
+option_a_text = " Quickly sell 3 units of palm oil during the confusion"
+option_b_text = " Buy 2 units of garri from traders leaving the market"
+option_a_good_name = "palm_oil"
+option_a_quantity = -3
+option_a_is_buy = false
+option_a_risk_change = 7
+option_b_quantity = 2
+option_b_risk_change = 4
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

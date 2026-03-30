@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://walf3sq1wdei"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_g0xix"]
+
+[resource]
+script = ExtResource("1_g0xix")
+title = "Gunfire Shocks the Region."
+description = "News spreads quickly that colonial troops have opened fire on protesting women in nearby towns. The shocking reports cause fear and anger throughout the region. Many traders consider closing their stalls while buyers rush to purchase food before markets shut down."
+price_multiplier = 3.0
+risk_level = 9
+option_a_text = "Sell 4 mudu of garri to buyers preparing for shortages"
+option_b_text = "Close your stall and stay out of the unrest"
+option_a_good_name = "garri"
+option_a_quantity = -4
+option_a_is_buy = false
+option_a_risk_change = 4
+option_b_risk_change = 1
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

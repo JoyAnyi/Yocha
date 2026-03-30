@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://wmbl0gc1hklv"]
 
+[ext_resource type="Texture2D" uid="uid://xvw7dlcoacrh" path="res://Yocha/Images/Nigerian_village_market_202603280042.jpeg" id="1_2ggim"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_aaaye"]
 
 [resource]
@@ -8,6 +9,7 @@ title = "Suspicion of Direct Taxation"
 description = "Captain Cook begins revising the nominal roll for taxation in Oloko, Bende, and Umuahia.
 Women fear that this is a prelude to taxing them, just as men were taxed the previous year.
 Rumors spread quickly, causing tension in the markets and neighborhoods."
+event_image = ExtResource("1_2ggim")
 option_a_text = " Buy 15 mudu of garri at low price"
 option_b_text = " Wait and observe market tension"
 option_a_good_name = "garri"

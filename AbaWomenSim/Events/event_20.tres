@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://cxr8dfei25isr"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_anb7q"]
+
+[resource]
+script = ExtResource("1_anb7q")
+title = "Reforms & Legacy"
+description = "Following the Aba Women's War and the Commission of Inquiry, the colonial government abolishes the Warrant Chief system.
+Women are appointed to Native Courts, gaining a voice in governance for the first time. Traders in the market feel the effects: trade is safer, tensions have reduced, and the economy slowly recovers.
+Stories of Nwanyeruwa and the Oloko Trio inspire the younger generation, and the region recognizes the power of collective action. The legacy of the revolt shapes the future of society and commerce alike."
+option_a_text = " Sell remaining palm oil to secure profits"
+option_b_text = " Buy garri to prepare for future trade opportunities"
+option_a_good_name = "palm_oil"
+option_a_quantity = -3
+option_a_is_buy = false
+option_b_good_name = "garri"
+option_b_quantity = 3
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

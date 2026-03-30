@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://bci7h5tx6ldko"]
 
+[ext_resource type="Texture2D" path="res://Yocha/Images/Women_traders_discussing_202603280044.jpeg" id="1_5qj5l"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_uw1ov"]
 
 [resource]
@@ -8,6 +9,7 @@ title = "Counting of Livestock Causes Unease"
 description = "Captain Cook revises the nominal rolls in Oloko, counting livestock and household members.
 Merchants notice that buyers are cautious and some goods start disappearing from the market.
 Rumors spread that taxation may soon affect women, creating tension and uncertainty in trading."
+event_image = ExtResource("1_5qj5l")
 option_a_text = " Buy 10 units of salt quickly"
 option_b_text = " Hold your money and watch the market"
 option_a_good_name = "salt"
