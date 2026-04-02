@@ -17,6 +17,7 @@ extends Control
 # Note to self: use the grid later for the visual boxes
 @onready var inventory_grid = $MarginContainer/MainLayout/DashboardPanel/InventoryGrid
 @onready var story_audio = $StoryAudio
+@onready var background_audio = $BackgroundAudio
 # INTERNAL STATE: Memory
 var player: PlayerStats
 var current_event_index: int = 0
@@ -92,6 +93,15 @@ func load_event(index: int):
 	# Silence if this event has no sound
 	else:
 		story_audio.stop()
+		
+#Background narration
+	if current_event_data.background_audio != null:
+		background_audio.stream = current_event_data.background_audio
+		background_audio.play()
+	
+	else:
+		background_audio.stop()
+
 	
    # Reset Feedback
 	feedback_label.text = "Make a choice"

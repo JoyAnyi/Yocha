@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://4b0mv81sf424"]
 
+[ext_resource type="Texture2D" uid="uid://cu3eljpnxf51d" path="res://Yocha/AbaWomenSim/Images/Nigerian_town_scene_202604021359.jpeg" id="1_1it5y"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_j3d4e"]
+[ext_resource type="AudioStream" uid="uid://dr7v56l0eh3m5" path="res://Yocha/AbaWomenSim/Audio/event16.mp3" id="1_k47lk"]
 
 [resource]
 script = ExtResource("1_j3d4e")
 title = "Warrant Chiefs Begin to Resign."
-description = "Warrant Chiefs Begin to Resign. Some Warrant Chiefs begin to step down after days of relentless protests. Women celebrate in the streets, singing and dancing as authority weakens. Markets are unstable. Some traders flee, while others rush to take advantage of the confusion. No one knows what will happen next."
+description = "Warrant Chiefs Begin to Resign. Some Warrant Chiefs begin to step down after days of relentless protests. Women celebrate in the streets, singing and dancing as the authority weakens. Markets are unstable. Some traders flee, while others rush to take advantage of the confusion. No one knows what will happen next."
+event_image = ExtResource("1_1it5y")
+event_audio = ExtResource("1_k47lk")
 price_multiplier = 2.2
 risk_level = 6
 option_a_text = " Quickly sell 3 units of palm oil during the confusion"

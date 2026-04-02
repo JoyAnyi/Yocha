@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dpk3wd0tiffp8"]
 
+[ext_resource type="Texture2D" uid="uid://dyo1a0mdh5orx" path="res://Yocha/AbaWomenSim/Images/Nigerian_market_scene_202604021337.jpeg" id="1_70fp1"]
+[ext_resource type="AudioStream" uid="uid://ngc4qv61o7gt" path="res://Yocha/AbaWomenSim/Audio/event10.mp3" id="1_cefk7"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_s6b6x"]
 
 [resource]
 script = ExtResource("1_s6b6x")
 title = "Colonial Officials Arrive."
 description = "Colonial officials and police arrive in the area to observe the protests spreading across the region. Their presence makes the market tense. Some traders fear the market may close if trouble begins, while buyers rush to purchase goods before anything happens."
+event_image = ExtResource("1_70fp1")
+event_audio = ExtResource("1_cefk7")
 price_multiplier = 2.2
 risk_level = 6
 option_a_text = "Sell 2 units of salt to buyers preparing for uncertainty"

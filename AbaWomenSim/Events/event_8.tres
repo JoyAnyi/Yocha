@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dmbe8rtaq2yxq"]
 
+[ext_resource type="AudioStream" uid="uid://j1xhnst4yy5h" path="res://Yocha/AbaWomenSim/Audio/event8.mp3" id="1_8f8l1"]
+[ext_resource type="Texture2D" uid="uid://b3xp8trymks60" path="res://Yocha/AbaWomenSim/Images/Nigerian_women_protesting_202604021332.jpeg" id="1_e83hd"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_iv7f1"]
 
 [resource]
 script = ExtResource("1_iv7f1")
 title = "Women Surround the Warrant Chief."
-description = "Hundreds of women gather outside the compound of a warrant chief. They sing protest songs and demand answers about the rumored taxation of women. The demonstration is loud and tense. Some traders close their stalls early, while others try to sell goods quickly before the situation worsens."
+description = "Hundreds of women gather outside the compound of a warrant chief. They sing protest songs and demand answers about the rumoured taxation of women. The demonstration is loud and tense. Some traders close their stalls early, while others try to sell goods quickly before the situation worsens."
+event_image = ExtResource("1_e83hd")
+event_audio = ExtResource("1_8f8l1")
 price_multiplier = 2.0
 risk_level = 5
 option_a_text = " Sell 5 units of palm oil quickly before stalls close"

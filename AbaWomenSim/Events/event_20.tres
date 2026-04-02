@@ -1,13 +1,17 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://cxr8dfei25isr"]
 
+[ext_resource type="Texture2D" uid="uid://kqdukosahi57" path="res://Yocha/AbaWomenSim/Images/Nigerian_women_in_202604021409.jpeg" id="1_40buf"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_anb7q"]
+[ext_resource type="AudioStream" uid="uid://1j8n3lqwwxef" path="res://Yocha/AbaWomenSim/Audio/event20.mp3" id="1_ygtm6"]
 
 [resource]
 script = ExtResource("1_anb7q")
 title = "Reforms & Legacy"
-description = "Following the Aba Women's War and the Commission of Inquiry, the colonial government abolishes the Warrant Chief system.
+description = "Following the Aba Women's War and the Commission of Inquiry, the colonial government abolished the Warrant Chief system.
 Women are appointed to Native Courts, gaining a voice in governance for the first time. Traders in the market feel the effects: trade is safer, tensions have reduced, and the economy slowly recovers.
-Stories of Nwanyeruwa and the Oloko Trio inspire the younger generation, and the region recognizes the power of collective action. The legacy of the revolt shapes the future of society and commerce alike."
+Stories of Nwanyeruwa and the Oloko Trio inspire the younger generation, and the region recognises the power of collective action. The legacy of the revolt shapes the future of society and commerce alike."
+event_image = ExtResource("1_40buf")
+event_audio = ExtResource("1_ygtm6")
 option_a_text = " Sell remaining palm oil to secure profits"
 option_b_text = " Buy garri to prepare for future trade opportunities"
 option_a_good_name = "palm_oil"

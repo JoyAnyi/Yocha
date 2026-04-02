@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dcdxft14nbfiv"]
 
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_3kdsl"]
+[ext_resource type="AudioStream" uid="uid://d4m3lajrgb68f" path="res://Yocha/AbaWomenSim/Audio/event17.mp3" id="1_sa7gw"]
+[ext_resource type="Texture2D" uid="uid://cxmv13254idp8" path="res://Yocha/AbaWomenSim/Images/Nigerian_town_under_202604021413.jpeg" id="1_ywbuf"]
 
 [resource]
 script = ExtResource("1_3kdsl")
 title = "Mass Suppression Across the Region."
 description = "Colonial forces move across the region to bring the protests under control. Patrols enter towns, break up gatherings, and enforce order. Markets reopen under strict watch, but fear remains. Some traders return cautiously, while others stay away, unsure if it is safe. The energy of the protests begins to fade as control is re-established."
+event_image = ExtResource("1_ywbuf")
+event_audio = ExtResource("1_sa7gw")
 price_multiplier = 1.8
 risk_level = 6
 option_a_text = " Return to the market early and sell 2 units of palm oil"

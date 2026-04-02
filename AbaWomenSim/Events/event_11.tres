@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dqm4nxv2ebtwi"]
 
+[ext_resource type="Texture2D" uid="uid://bma67oev8xp1r" path="res://Yocha/AbaWomenSim/Images/Colonial_soldiers_confront_202604021341.jpeg" id="1_6deou"]
+[ext_resource type="AudioStream" uid="uid://blcuxgf28p51j" path="res://Yocha/AbaWomenSim/Audio/event11.mp3" id="1_31pax"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_3880l"]
 
 [resource]
 script = ExtResource("1_3880l")
 title = "Troops Move to Disperse the Crowd."
-description = "Colonial troops and police arrive to disperse the protesting women gathered near administrative buildings. The crowd refuses to leave and tensions rise quickly. Traders nearby fear the situation may turn violent. Buyers rush to purchase food and supplies before the market closes."
+description = "Colonial troops and police arrive to disperse the protesting women gathered near administrative buildings. The crowd refuses to leave, and tensions rise quickly. Traders nearby fear the situation may turn violent. Buyers rush to purchase food and supplies before the market closes."
+event_image = ExtResource("1_6deou")
+event_audio = ExtResource("1_31pax")
 price_multiplier = 2.7
 risk_level = 8
 option_a_text = " Sell 2 units of palm oil to desperate buyers"

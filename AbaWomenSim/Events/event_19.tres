@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://c7elx6y1uyluo"]
 
+[ext_resource type="AudioStream" uid="uid://tl4ytt7stev5" path="res://Yocha/AbaWomenSim/Audio/event19.mp3" id="1_3h10s"]
+[ext_resource type="Texture2D" uid="uid://dy12dqi8f5veq" path="res://Yocha/AbaWomenSim/Images/Nigerian_public_gathering_202604021406.jpeg" id="1_ee5rq"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_yq01i"]
 
 [resource]
 script = ExtResource("1_yq01i")
 title = "Aba Commission of Inquiry."
-description = "Colonial authorities launch an official inquiry into the events of the revolt. Witnesses are called from different regions to explain what happened. Traders gather in markets discussing the hearings and sharing stories of the protests. Although many voices are heard, some feel that women, who led the movement, are not fully represented. Trade continues as the region slowly recovers, but attention is now focused on what changes may come."
+description = "Colonial authorities launch an official inquiry into the events of the revolt. Witnesses are called from different regions to explain what happened. Traders gather in markets to discuss the hearings and share stories of the protests. Although many voices are heard, some feel that women, who led the movement, are not fully represented. Trade continues as the region slowly recovers, but attention is now focused on potential changes."
+event_image = ExtResource("1_ee5rq")
+event_audio = ExtResource("1_3h10s")
 price_multiplier = 1.2
 risk_level = 2
 option_a_text = " Sell 2 units of palm oil as confidence returns"

@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://ban34h1v5f1oo"]
 
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_0lhxg"]
+[ext_resource type="Texture2D" uid="uid://dhbghu5sgefap" path="res://Yocha/AbaWomenSim/Images/Nigerian_women_protest_202604021334.jpeg" id="1_7222q"]
+[ext_resource type="AudioStream" uid="uid://b0ntknutjoivl" path="res://Yocha/AbaWomenSim/Audio/event9.mp3" id="1_mjw82"]
 
 [resource]
 script = ExtResource("1_0lhxg")
 title = "Women Surround Colonial Offices."
-description = "Large groups of protesting women gather outside colonial administrative offices demanding answers about rumored taxation and the authority of warrant chiefs. Officials remain inside the buildings while the crowd grows louder. Traders nearby become nervous as the situation threatens to disrupt the market."
+description = "Large groups of protesting women gather outside colonial administrative offices demanding answers about rumoured taxation and the authority of warrant chiefs. Officials remain inside the buildings while the crowd grows louder. Traders nearby become nervous as the situation threatens to disrupt the market."
+event_image = ExtResource("1_7222q")
+event_audio = ExtResource("1_mjw82")
 price_multiplier = 2.4
 risk_level = 7
 option_a_text = "Sell 3 mudu of garri quickly before the market closes"

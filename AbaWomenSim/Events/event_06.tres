@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dfucfsj8dpfw2"]
 
+[ext_resource type="Texture2D" uid="uid://cvguqpod6w6fx" path="res://Yocha/AbaWomenSim/Images/Woman_confronts_messenger_202604021329.jpeg" id="1_40dln"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_aiur6"]
+[ext_resource type="AudioStream" uid="uid://deuiexndatran" path="res://Yocha/AbaWomenSim/Audio/event6.mp3" id="1_vauue"]
 
 [resource]
 script = ExtResource("1_aiur6")
 title = "The Argument at Oloko."
 description = "A loud argument breaks out between Nwanyeruwa and the warrant chief's messenger, Mark Emereuwa. She refuses to be counted for taxation, insisting that women should not be taxed. Traders stop to watch as word spreads quickly through the market. Some buyers begin purchasing goods in panic, fearing trouble ahead."
+event_image = ExtResource("1_40dln")
+event_audio = ExtResource("1_vauue")
 price_multiplier = 1.6
 risk_level = 4
 option_a_text = " Sell 6 mudu of garri to anxious buyers"

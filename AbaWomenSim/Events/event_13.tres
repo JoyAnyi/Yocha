@@ -1,11 +1,15 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://brmhadbks6ugs"]
 
+[ext_resource type="Texture2D" uid="uid://dj6mvr1if4qdu" path="res://Yocha/AbaWomenSim/Images/Nigerian_market_reopening_202604021344.jpeg" id="1_3u2ls"]
+[ext_resource type="AudioStream" uid="uid://b600bosrvrs6y" path="res://Yocha/AbaWomenSim/Audio/event13.mp3" id="1_4s65h"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_jb6lc"]
 
 [resource]
 script = ExtResource("1_jb6lc")
 title = "Markets Slowly Reopen."
 description = "After days of unrest, markets begin to reopen. Traders return cautiously, unsure if the situation is stable. Goods are scarce due to recent disruptions, and prices remain high. Buyers slowly return to restock their homes."
+event_image = ExtResource("1_3u2ls")
+event_audio = ExtResource("1_4s65h")
 price_multiplier = 2.5
 risk_level = 6
 option_a_text = " Sell 4 units of salt at high prices"

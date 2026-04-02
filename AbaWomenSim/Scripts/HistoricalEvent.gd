@@ -12,6 +12,7 @@ class_name HistoricalEvent
 @export var event_image: Texture2D
 # AudioStream for voiceovers/SFX
 @export var event_audio: AudioStream
+@export var background_audio: AudioStream
 
 # DATA: How the game changes:
 #@export_group("Game Data")
