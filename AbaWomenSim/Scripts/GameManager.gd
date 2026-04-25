@@ -164,7 +164,8 @@ func handle_decision(choice: String):
 	btn_b.disabled = true
 	
 	player.record_choice(current_event_data.title, choice)
-	
+	#Updates the sidebar to show the new choice
+	update_history_ui()
 	var good_name: String
 	var quantity: int
 	var is_buy: bool
