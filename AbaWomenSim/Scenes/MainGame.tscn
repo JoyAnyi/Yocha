@@ -88,7 +88,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.13542569, 0.01881401, 0.13119602, 0.92941177)
+color = Color(0.07058824, 0.07058824, 0.07058824, 1)
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1541362613]
 layout_mode = 1
@@ -112,7 +112,7 @@ size_flags_horizontal = 3
 
 [node name="GameTitle" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=566533874]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.9607843, 0.94509804, 0.22352941, 1)
+theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
 theme_override_colors/font_outline_color = Color(0.9882353, 0.9098039, 0.22745098, 1)
 theme_override_constants/shadow_offset_x = 2
 theme_override_constants/shadow_offset_y = 2
