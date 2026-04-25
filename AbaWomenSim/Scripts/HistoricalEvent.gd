@@ -52,3 +52,7 @@ class_name HistoricalEvent
 @export var option_b_is_buy: bool = true
 @export var option_b_risk_change: int = 0
 #@export var option_b_unrest_change: int = 0
+
+@export_group("Branching Destinations")
+@export var next_event_index_a: int = 0
+@export var next_event_index_b: int = 0

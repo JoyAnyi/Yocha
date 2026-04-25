@@ -17,7 +17,8 @@ var inventory = {
 }
 #The most goods you can carry
 var max_inventory: int = 50
-
+#Game Memory
+var choice_history: Array = []
 #Call this function when the user buys or sells things
 func update_money(amount: int):
 	money+=amount
@@ -54,3 +55,9 @@ func change_inventory(item: String, amount: int) -> void:
 	for key in inventory.keys():
 		goods += inventory[key]
 	stats_updated.emit()
+	
+func record_choice(event_title: String, choice_made: String):
+	choice_history.append({
+		"event": event_title,
+		"choice": choice_made
+	})

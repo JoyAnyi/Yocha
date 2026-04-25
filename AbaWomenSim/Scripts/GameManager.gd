@@ -11,11 +11,13 @@ extends Control
 @onready var btn_a = $MarginContainer/MainLayout/StagePanel/ButtonContainer/ButtonOptionA
 @onready var btn_b = $MarginContainer/MainLayout/StagePanel/ButtonContainer/ButtonOptionB
 @onready var money_label = $MarginContainer/MainLayout/DashboardPanel/MoneyLabel
-@onready var goods_label = $MarginContainer/MainLayout/DashboardPanel/GoodsLabel
+#@onready var goods_label = $MarginContainer/MainLayout/DashboardPanel/GoodsLabel
 @onready var market_manager = $MarketManager
+# Grab the container where the history text will be injected
+@onready var history_log = $MarginContainer/MainLayout/DashboardPanel/StoryScroll/HistoryTimelineLog
 
 # Note to self: use the grid later for the visual boxes
-@onready var inventory_grid = $MarginContainer/MainLayout/DashboardPanel/InventoryGrid
+#@onready var inventory_grid = $MarginContainer/MainLayout/DashboardPanel/InventoryGrid
 @onready var story_audio = $StoryAudio
 @onready var background_audio = $BackgroundAudio
 # INTERNAL STATE: Memory
@@ -54,13 +56,47 @@ func _ready():
 # GAME LOOP
 func load_event(index: int):
 	# If the game ran out of events, stop.
-	#if index >=timeline.size():
-		#title_label.text ="Game Over"
-		#desc_label.text = "You finished the run!"
-		#btn_a.visible = false
-		#btn_b.visible = false
-		#restart_button.visible = true
-		#return
+# Fade out effect
+	self.modulate.a = 0.0
+	# END OF CHAPTER LOGIC
+	if index >= timeline.size() or index == -1: # -1 is a special code to force the end
+		
+		#Save the state to JSON
+		save_state_to_json()
+		
+		#Build the summary text based on their choices
+		var summary_text = "Chapter Complete: The Aba Women's Riot\n\n"
+		summary_text += "You finished with ₦" + str(player.money) + " and a risk level of " + str(player.risk) + "%.\n\n"
+		summary_text += "Key Lessons Learned:\n"
+		summary_text += "- The colonial economy was heavily dependent on palm oil.\n"
+		summary_text += "- The women organized using traditional networks to resist taxation.\n"
+		
+		#Update the UI
+		title_label.text = "Historical Summary"
+		desc_label.text = summary_text
+		event_image.texture = null
+		
+		#Change the buttons for the end screen
+		btn_a.text = "Replay Chapter"
+		btn_a.visible = true
+		btn_a.disabled = false
+		
+		btn_b.text = "Next Story"
+		btn_b.visible = true
+		btn_b.disabled = false
+		
+		restart_button.visible = false
+		
+		#Disconnect the old trading functions and connect the new ending functions
+		if btn_a.pressed.is_connected(_on_button_a_pressed):
+			btn_a.pressed.disconnect(_on_button_a_pressed)
+			btn_b.pressed.disconnect(_on_button_b_pressed)
+			
+		btn_a.pressed.connect(_on_restart_pressed)
+		
+		var end_tween = create_tween()
+		end_tween.tween_property(self, "modulate:a", 1.0, 0.5)
+		return
 	
 	if index >= timeline.size():
 		title_label.text = "End of Historical Chapter"
@@ -109,6 +145,10 @@ func load_event(index: int):
 	btn_a.disabled = false
 	btn_b.disabled = false
 
+	# Fade in effect
+	var tween = create_tween()
+	tween.tween_property(self, "modulate:a", 1.0, 0.5)
+
 func _on_button_a_pressed():
 	handle_decision("A")
 	
@@ -122,6 +162,8 @@ func _on_button_b_pressed():
 func handle_decision(choice: String):
 	btn_a.disabled = true
 	btn_b.disabled = true
+	
+	player.record_choice(current_event_data.title, choice)
 	
 	var good_name: String
 	var quantity: int
@@ -149,6 +191,11 @@ func handle_decision(choice: String):
 	var total_cost = price * abs(quantity)
 	
 	var action_taken = false  # Track if any trade actually happens
+	
+	if is_buy:
+		feedback_label.text = "You bought " + str(abs(quantity)) + " units of " + good_name.replace("_", " ") + "."
+	else:
+		feedback_label.text = "You sold " + str(abs(quantity)) + " units of " + good_name.replace("_", " ") + "."
 	
 	# BUYING
 	if is_buy and quantity > 0:
@@ -185,17 +232,22 @@ func handle_decision(choice: String):
 		player.stats_updated.emit()
 	
 	await get_tree().create_timer(2.0).timeout
-	load_event(current_event_index + 1)
+	#load_event(current_event_index + 1)
+	# BRANCHING LOGIC
+	if choice == "A":
+		load_event(current_event_data.next_event_index_a)
+	else:
+		load_event(current_event_data.next_event_index_b)
 	
 # UI UPDATES
 func _on_stats_updated():
 
 	money_label.text = "₦" + str(player.money)
-	goods_label.text = "INVENTORY\nCount: " + str(player.goods)
+	#goods_label.text = "INVENTORY\nCount: " + str(player.goods)
 
 	# Clear old slots
-	for child in inventory_grid.get_children():
-		child.queue_free()
+	#for child in inventory_grid.get_children():
+		#child.queue_free()
 
 	var current_slot = 0
 
@@ -221,26 +273,42 @@ func _on_stats_updated():
 					slot.color = Color.GRAY
 
 			slot.tooltip_text = good_name.replace("_", " ").capitalize()
-			inventory_grid.add_child(slot)
+			#inventory_grid.add_child(slot)
 
 			current_slot += 1
 
 	# Fill remaining empty slots
-	for i in range(current_slot, 9):
-		var slot = ColorRect.new()
-		slot.custom_minimum_size = Vector2(60, 60)
-		slot.color = Color(0.2, 0.2, 0.2)
-		inventory_grid.add_child(slot)
+	#for i in range(current_slot, 9):
+		#var slot = ColorRect.new()
+		#slot.custom_minimum_size = Vector2(60, 60)
+		#slot.color = Color(0.2, 0.2, 0.2)
+		#inventory_grid.add_child(slot)
+		
+func update_history_ui():
+	#Clear out the old history text to not create duplicates
+	for child in history_log.get_children():
+		child.queue_free()
+		
+	#Loops through the array of saved choices
+	for entry in player.choice_history:
+		
+		#Creates a brand new RichTextLabel node purely through code
+		var log_entry = RichTextLabel.new()
+		
+		#Configures the node's settings
+		log_entry.bbcode_enabled = true
+		log_entry.fit_content = true
+		log_entry.custom_minimum_size = Vector2(0, 40) # Adds breathing room between entries
+		
+		#Formats the text. Bold for the event title and put the choice underneath
+		log_entry.text = "[b]" + entry["event"] + "[/b]\n" + "Action: " + entry["choice"]
+		
+		#Injects the finished text node into the UI container
+		history_log.add_child(log_entry)
+
 		
 func _on_restart_pressed():
-	#player.money = 100000
-	#player.goods = 0
-	#current_event_index = 0
-	#restart_button.visible = false
-	#btn_a.visible = true
-	#btn_b.visible = true
-	#_on_stats_updated()
-	#load_event(0)
+	
 	player.money = 100000
 	for key in player.inventory.keys():
 		player.inventory[key] = 0
@@ -255,3 +323,23 @@ func _on_restart_pressed():
 	
 	player.stats_updated.emit()
 	load_event(0)
+
+func save_state_to_json():
+	#Create a Dictionary of the data we want to keep
+	var save_data = {
+		"money": player.money,
+		"risk": player.risk,
+		"goods": player.goods,
+		"inventory": player.inventory,
+		"history": player.choice_history
+	}
+	
+	#Opens a file in the user's local system
+	var file = FileAccess.open("user://player_history_log.json", FileAccess.WRITE)
+	
+	#Convert the Dictionary to a JSON string and save it
+	var json_string = JSON.stringify(save_data, "\t")
+	file.store_string(json_string)
+	file.close()
+	
+	print("Game saved! Data written to JSON.")

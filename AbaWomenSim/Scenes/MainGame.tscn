@@ -33,6 +33,12 @@ line_spacing = 40.0
 font = SubResource("SystemFont_psig4")
 font_size = 70
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvefp"]
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q7iaj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_tl6sc"]
@@ -40,24 +46,17 @@ font_size = 66
 font_color = Color(1, 1, 0.24313726, 1)
 outline_color = Color(1, 1, 0.93333334, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tl6sc"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 8
-border_width_top = 8
-border_width_right = 8
-border_width_bottom = 8
-border_color = Color(0.9706139, 0.77241856, 0.18335798, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hvefp"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eu5ij"]
-bg_color = Color(0.000113828006, 0.00011382805, 0.00011382793, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ic5e"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6dpp2"]
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 8
-border_width_top = 8
-border_width_right = 8
-border_width_bottom = 8
-border_color = Color(0.9467285, 0.7834732, 0.22067747, 1)
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xmnsk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_allh3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6td2t"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vf2v3"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_eu5ij"]
 font_size = 67
@@ -140,6 +139,11 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 fit_content = true
 autowrap_mode = 2
 
+[node name="ImageContainer" type="PanelContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1209867762]
+clip_contents = true
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hvefp")
+
 [node name="EventImage" type="TextureRect" parent="MarginContainer/MainLayout/StagePanel" unique_id=2059433039]
 custom_minimum_size = Vector2(0, 550)
 layout_mode = 2
@@ -173,9 +177,13 @@ theme_override_colors/font_color = Color(0.9749437, 0.8775981, 0.405172, 1)
 theme_override_colors/font_focus_color = Color(0.9666117, 0.9740494, 0.67035335, 1)
 theme_override_colors/font_hover_color = Color(0.978218, 0.9116732, 0.35545, 1)
 theme_override_colors/icon_hover_color = Color(1, 0.74509805, 1, 1)
-theme_override_styles/normal = SubResource("StyleBoxFlat_tl6sc")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_eu5ij")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_hvefp")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6ic5e")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_xmnsk")
 text = "Option A"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1208749593]
+layout_mode = 2
 
 [node name="ButtonOptionB" type="Button" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1845878108]
 custom_minimum_size = Vector2(600, 145)
@@ -183,7 +191,9 @@ layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.95908576, 0.8840834, 0.41363144, 1)
 theme_override_colors/font_hover_color = Color(0.99607843, 0.8666667, 0.21960784, 1)
-theme_override_styles/normal = SubResource("StyleBoxFlat_6dpp2")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_allh3")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_6td2t")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_vf2v3")
 text = "Option B"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1897700978]
@@ -194,7 +204,7 @@ layout_mode = 2
 text = "Play Again"
 
 [node name="DashboardPanel" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=2136999456]
-custom_minimum_size = Vector2(400, 0)
+custom_minimum_size = Vector2(300, 0)
 layout_mode = 2
 
 [node name="MoneyLabel" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=956064674]
@@ -210,6 +220,20 @@ label_settings = SubResource("LabelSettings_6dpp2")
 [node name="InventoryGrid" type="GridContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=864118928]
 layout_mode = 2
 columns = 3
+
+[node name="MoneyPill" type="PanelContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=1849754284]
+layout_mode = 2
+
+[node name="HistoryTitle" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=860227060]
+layout_mode = 2
+
+[node name="HistoryTimelineLog" type="VBoxContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=794217219]
+layout_mode = 2
+
+[node name="PauseButton" type="Button" parent="." unique_id=1031637134]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
 
 [node name="StoryAudio" type="AudioStreamPlayer" parent="." unique_id=663411801]
 
