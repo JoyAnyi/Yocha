@@ -17,4 +17,6 @@ option_b_text = " Hold your money and watch the market"
 option_a_good_name = "salt"
 option_a_quantity = 10
 option_a_risk_change = 2
+next_event_index_a = 3
+next_event_index_b = 3
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

@@ -20,4 +20,6 @@ option_a_is_buy = false
 option_a_risk_change = 7
 option_b_quantity = 2
 option_b_risk_change = 4
+next_event_index_a = 16
+next_event_index_b = 16
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

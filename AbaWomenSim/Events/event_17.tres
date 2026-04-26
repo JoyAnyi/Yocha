@@ -21,4 +21,6 @@ option_a_risk_change = 4
 option_b_good_name = "salt"
 option_b_quantity = 2
 option_b_risk_change = 1
+next_event_index_a = 17
+next_event_index_b = 17
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

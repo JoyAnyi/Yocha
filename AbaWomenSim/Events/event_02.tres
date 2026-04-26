@@ -17,4 +17,6 @@ option_b_text = " Wait and observe market tension"
 option_a_good_name = "garri"
 option_a_quantity = 15
 option_a_risk_change = 1
+next_event_index_a = 2
+next_event_index_b = 2
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

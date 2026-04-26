@@ -20,4 +20,6 @@ option_a_is_buy = false
 option_a_risk_change = 1
 option_b_good_name = "garri"
 option_b_quantity = 2
+next_event_index_a = 19
+next_event_index_b = 19
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

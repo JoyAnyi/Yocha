@@ -1,0 +1,99 @@
+[gd_scene format=3 uid="uid://j64vohhgv6ub"]
+
+[ext_resource type="Script" uid="uid://buql44ba24ehe" path="res://Yocha/AbaWomenSim/Scripts/MainMenu.gd" id="1_ilnfo"]
+[ext_resource type="Texture2D" uid="uid://05uwg1g567yo" path="res://Yocha/AbaWomenSim/Images/Screenshot 2026-04-26 at 19.43.43.png" id="2_5skdl"]
+[ext_resource type="FontFile" uid="uid://ctr8rf1amefg8" path="res://Yocha/AbaWomenSim/Audio/Nunito-BlackItalic.ttf" id="3_cd8ir"]
+[ext_resource type="FontFile" uid="uid://ctrycnc6rlr2u" path="res://Yocha/AbaWomenSim/Assets/Montreal-Bold.ttf" id="4_e1gyu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cd8ir"]
+bg_color = Color(0.35211688, 0.6622349, 0.6245349, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+corner_detail = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6hcmp"]
+bg_color = Color(0.88161045, 0.47867602, 0.16970748, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e1gyu"]
+bg_color = Color(0.37561435, 0.6802714, 0.4241957, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o8rl1"]
+bg_color = Color(0.86612844, 0.49343842, 0.098923944, 1)
+
+[node name="MainMenu" type="Control" unique_id=1101887844]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ilnfo")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1233813636]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2143465711]
+layout_mode = 0
+offset_left = -262.0
+offset_top = -166.0
+offset_right = 2212.0
+offset_bottom = 1207.0
+texture = ExtResource("2_5skdl")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1774746027]
+modulate = Color(0.9555723, 0.6283981, 0.17914605, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -282.0
+offset_top = -429.0
+offset_right = 386.0
+offset_bottom = -150.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
+
+[node name="StartButton" type="Button" parent="VBoxContainer" unique_id=1649915599]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.61762106, 0.9607797, 0.8031139, 1)
+theme_override_fonts/font = ExtResource("3_cd8ir")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_cd8ir")
+theme_override_styles/hover = SubResource("StyleBoxFlat_6hcmp")
+text = "Start Simulation"
+
+[node name="QuitButton" type="Button" parent="VBoxContainer" unique_id=950314355]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.66187596, 0.9666049, 0.63744396, 1)
+theme_override_fonts/font = ExtResource("4_e1gyu")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_e1gyu")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o8rl1")
+text = "Exit"
+
+[connection signal="pressed" from="VBoxContainer/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/QuitButton" to="." method="_on_quit_button_pressed"]

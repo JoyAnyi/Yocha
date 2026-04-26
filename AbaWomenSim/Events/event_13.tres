@@ -21,4 +21,6 @@ option_a_risk_change = 1
 option_b_good_name = "palm_oil"
 option_b_quantity = 2
 option_b_risk_change = 2
+next_event_index_a = 13
+next_event_index_b = 13
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

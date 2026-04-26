@@ -16,7 +16,7 @@ var inventory = {
 	"salt": 0
 }
 #The most goods you can carry
-var max_inventory: int = 50
+var max_inventory: int = 100
 #Game Memory
 var choice_history: Array = []
 #Call this function when the user buys or sells things
@@ -33,7 +33,7 @@ func update_risk(amount: int):
 func update_goods(amount: int):
 	goods += amount
 	
-# CLAMP is a helper math function. It ensures 'goods' never goes below 0 or above 50
+# CLAMP is a helper math function. It ensures goods never goes below 0 or above 100
 	goods = clamp(goods, 0, max_inventory)
 	stats_updated.emit()
 	

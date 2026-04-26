@@ -5,7 +5,7 @@ extends Control
 @onready var event_image = $ImageFrame/EventImage
 @onready var title_label = $EventTitle
 @onready var desc_label = $StoryScroll/EventDescription
-@onready var event_image2 = $EventImage
+@onready var event_image2 = $ImageFrame/EventImage
 @onready var feedback_label = $FeedbackLabel
 @onready var restart_button = $RestartButton
 @onready var btn_a = $ButtonContainer/ButtonOptionA
@@ -13,6 +13,7 @@ extends Control
 @onready var money_label = $MoneyLabel
 #@onready var goods_label = $MarginContainer/MainLayout/DashboardPanel/GoodsLabel
 @onready var market_manager = $MarketManager
+
 # Grab the container where the history text will be injected
 @onready var history_log = $HistoryTimelineLog
 
@@ -29,6 +30,7 @@ var current_event_data: HistoricalEvent
 # STARTUP SESSION
 func _ready():
 #Creates the Player Logic
+	print(market_manager)	
 	player = PlayerStats.new()
 	add_child(player)
 	# CONNECT THE RADIO! 
@@ -40,10 +42,7 @@ func _ready():
 	restart_button.pressed.connect(_on_restart_pressed)
 	#Draws the starting stats (Money: 100,000)
 	_on_stats_updated()
-	# Market Logic
-	#market = MarketManager.new()
-	#add_child(market)
-	#Start the first event
+	
 	# ADD THIS DEBUG SECTION:
 	print("Timeline Size: ", timeline.size())
 	if timeline.size() > 0:
@@ -51,7 +50,7 @@ func _ready():
 		load_event(0)
 	else:
 		print("Timeline is empty!")
-		
+			
 
 # GAME LOOP
 func load_event(index: int):
@@ -98,13 +97,13 @@ func load_event(index: int):
 		end_tween.tween_property(self, "modulate:a", 1.0, 0.5)
 		return
 	
-	if index >= timeline.size():
-		title_label.text = "End of Historical Chapter"
-		desc_label.text = "You have completed the Aba Women's Riot storyline.\n\nYou may restart and make different economic choices."
-		btn_a.visible = false
-		btn_b.visible = false
-		restart_button.visible = true
-		return
+	#if index >= timeline.size():
+		#title_label.text = "End of Historical Chapter"
+		#desc_label.text = "You have completed the Aba Women's Riot storyline.\n\nYou may restart and make different economic choices."
+		#btn_a.visible = false
+		#btn_b.visible = false
+		#restart_button.visible = true
+		#return
 	
 	current_event_index = index
 	current_event_data = timeline[index]
@@ -150,14 +149,14 @@ func load_event(index: int):
 	tween.tween_property(self, "modulate:a", 1.0, 0.5)
 
 func _on_button_a_pressed():
+	print("TRACKER 1: Button A actually received the click!")
 	handle_decision("A")
-	
+	btn_a.text = current_event_data.option_a_text
+	print("SUCCESS: BUTTON A WAS CLICKED!")
 func _on_button_b_pressed():
 	handle_decision("B")
-	
-	btn_a.text = current_event_data.option_a_text
-	btn_b.text = current_event_data.option_b_text	
-
+	btn_b.text = current_event_data.option_b_text
+	print("SUCCESS: BUTTON A WAS CLICKED!")	
 
 func handle_decision(choice: String):
 	btn_a.disabled = true
@@ -232,14 +231,19 @@ func handle_decision(choice: String):
 		player.risk += risk_change
 		player.stats_updated.emit()
 	
-	await get_tree().create_timer(2.0).timeout
+	print("TRACKER 2: Trade logic finished! Starting 2-second timer...")
+	#await get_tree().create_timer(2.0).timeout
+	print("SKIPPING TIMER FOR DEBUG")
 	#load_event(current_event_index + 1)
 	# BRANCHING LOGIC
 	if choice == "A":
+		print("TRACKER 3: Timer done! Attempting to load Event Index: ", current_event_data.next_event_index_a)
 		load_event(current_event_data.next_event_index_a)
+		
 	else:
+		print("TRACKER 3: Timer done! Attempting to load Event Index: ", current_event_data.next_event_index_b)
 		load_event(current_event_data.next_event_index_b)
-	
+
 # UI UPDATES
 func _on_stats_updated():
 
@@ -322,6 +326,12 @@ func _on_restart_pressed():
 	btn_a.visible = true
 	btn_b.visible = true
 	
+	if btn_a.pressed.is_connected(_on_restart_pressed):
+		btn_a.pressed.disconnect(_on_restart_pressed)
+	if not btn_a.pressed.is_connected(_on_button_a_pressed):
+		btn_a.pressed.connect(_on_button_a_pressed)
+	if not btn_b.pressed.is_connected(_on_button_b_pressed):
+		btn_b.pressed.connect(_on_button_b_pressed)
 	player.stats_updated.emit()
 	load_event(0)
 
@@ -344,3 +354,7 @@ func save_state_to_json():
 	file.close()
 	
 	print("Game saved! Data written to JSON.")
+
+
+func _on_timer_timeout() -> void:
+	pass # Replace with function body.
