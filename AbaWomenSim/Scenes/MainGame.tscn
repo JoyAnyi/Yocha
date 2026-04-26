@@ -33,19 +33,6 @@ line_spacing = 40.0
 font = SubResource("SystemFont_psig4")
 font_size = 70
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hvefp"]
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_q7iaj"]
-
-[sub_resource type="LabelSettings" id="LabelSettings_tl6sc"]
-font_size = 66
-font_color = Color(1, 1, 0.24313726, 1)
-outline_color = Color(1, 1, 0.93333334, 1)
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hvefp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ic5e"]
@@ -61,15 +48,14 @@ outline_color = Color(1, 1, 0.93333334, 1)
 [sub_resource type="LabelSettings" id="LabelSettings_eu5ij"]
 font_size = 67
 
-[sub_resource type="LabelSettings" id="LabelSettings_6dpp2"]
-font_size = 50
-
-[node name="MainGame" type="Control" unique_id=2112277817]
+[node name="MainGame" type="Control" unique_id=749305322]
 custom_minimum_size = Vector2(1152, 648)
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_right = 20.0
+offset_bottom = 80.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 10
@@ -77,9 +63,6 @@ size_flags_vertical = 6
 theme = ExtResource("1_tl6sc")
 script = ExtResource("1_eosr6")
 timeline = Array[ExtResource("2_xr3nn")]([ExtResource("4_x4028"), ExtResource("5_jpbm4"), ExtResource("6_ugwnq"), ExtResource("7_dn7gj"), ExtResource("8_ec6m2"), ExtResource("9_s87t3"), ExtResource("10_68ygn"), ExtResource("11_eljef"), ExtResource("12_bxye6"), ExtResource("13_hvefp"), ExtResource("14_6ic5e"), ExtResource("13_gijy1"), ExtResource("14_lopmg"), ExtResource("15_lopmg"), ExtResource("16_q7iaj"), ExtResource("19_xmnsk"), ExtResource("20_allh3"), ExtResource("21_6td2t"), ExtResource("22_vf2v3"), ExtResource("23_wni3v")])
-
-[node name="MarketManager" type="Node" parent="." unique_id=1876693958]
-script = ExtResource("5_ci6wu")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=523095635]
 layout_mode = 1
@@ -90,48 +73,28 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.07058824, 0.07058824, 0.07058824, 1)
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1541362613]
+[node name="MarketManager" type="Node" parent="." unique_id=1876693958]
+script = ExtResource("5_ci6wu")
+
+[node name="EventTitle" type="Label" parent="." unique_id=906806196]
 layout_mode = 1
-anchors_preset = 15
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 1.0
+offset_bottom = 96.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
-
-[node name="MainLayout" type="HBoxContainer" parent="MarginContainer" unique_id=354954834]
-layout_mode = 2
-theme_override_constants/separation = 50
-
-[node name="StagePanel" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=1525401079]
-layout_mode = 2
-size_flags_horizontal = 3
-
-[node name="GameTitle" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=566533874]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.8, 0.8, 0.8, 1)
-theme_override_colors/font_outline_color = Color(0.9882353, 0.9098039, 0.22745098, 1)
-theme_override_constants/shadow_offset_x = 2
-theme_override_constants/shadow_offset_y = 2
-theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 60
-text = "YОСНА"
-
-[node name="EventTitle" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=906806196]
-layout_mode = 2
 size_flags_vertical = 6
 text = "YOCHA"
 label_settings = SubResource("LabelSettings_xr3nn")
 autowrap_mode = 2
 
-[node name="StoryScroll" type="ScrollContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1188431560]
+[node name="StoryScroll" type="ScrollContainer" parent="." unique_id=1188431560]
 custom_minimum_size = Vector2(0, 200)
-layout_mode = 2
+layout_mode = 0
+offset_top = 80.0
+offset_right = 1414.0
+offset_bottom = 492.0
 
-[node name="EventDescription" type="RichTextLabel" parent="MarginContainer/MainLayout/StagePanel/StoryScroll" unique_id=644149419]
+[node name="EventDescription" type="RichTextLabel" parent="StoryScroll" unique_id=644149419]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -139,36 +102,42 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 fit_content = true
 autowrap_mode = 2
 
-[node name="ImageContainer" type="PanelContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1209867762]
-clip_contents = true
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_hvefp")
-
-[node name="EventImage" type="TextureRect" parent="MarginContainer/MainLayout/StagePanel" unique_id=2059433039]
-custom_minimum_size = Vector2(0, 550)
-layout_mode = 2
+[node name="EventImage" type="TextureRect" parent="." unique_id=2059433039]
+custom_minimum_size = Vector2(0, 500)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.32900003
+anchor_top = 0.572
+anchor_right = 0.32900003
+anchor_bottom = 0.572
+offset_left = -628.2601
+offset_top = -234.52002
+offset_right = 663.7399
+offset_bottom = 265.47998
+grow_vertical = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
-texture = SubResource("CompressedTexture2D_q7iaj")
 expand_mode = 1
 stretch_mode = 5
 
-[node name="FeedbackLabel" type="Label" parent="MarginContainer/MainLayout/StagePanel" unique_id=1811294197]
-layout_mode = 2
-text = "Result: "
-label_settings = SubResource("LabelSettings_tl6sc")
-
-[node name="Space" type="Control" parent="MarginContainer/MainLayout/StagePanel" unique_id=960458236]
-layout_mode = 2
-size_flags_vertical = 3
-
-[node name="ButtonContainer" type="VBoxContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=2055688791]
-layout_mode = 2
+[node name="ButtonContainer" type="VBoxContainer" parent="." unique_id=2055688791]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.49300003
+anchor_top = 0.82600003
+anchor_right = 0.49300003
+anchor_bottom = 0.82600003
+offset_left = -335.42004
+offset_top = -216.16003
+offset_right = 334.57996
+offset_bottom = 117.839966
+grow_horizontal = 2
+grow_vertical = 0
 size_flags_horizontal = 4
 theme_override_constants/separation = 20
 alignment = 1
 
-[node name="ButtonOptionA" type="Button" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1930034]
+[node name="ButtonOptionA" type="Button" parent="ButtonContainer" unique_id=1930034]
 custom_minimum_size = Vector2(600, 145)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -182,10 +151,10 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_6ic5e")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_xmnsk")
 text = "Option A"
 
-[node name="HSeparator" type="HSeparator" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1208749593]
+[node name="HSeparator" type="HSeparator" parent="ButtonContainer" unique_id=1208749593]
 layout_mode = 2
 
-[node name="ButtonOptionB" type="Button" parent="MarginContainer/MainLayout/StagePanel/ButtonContainer" unique_id=1845878108]
+[node name="ButtonOptionB" type="Button" parent="ButtonContainer" unique_id=1845878108]
 custom_minimum_size = Vector2(600, 145)
 layout_mode = 2
 size_flags_horizontal = 3
@@ -196,39 +165,51 @@ theme_override_styles/pressed = SubResource("StyleBoxEmpty_6td2t")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_vf2v3")
 text = "Option B"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/MainLayout/StagePanel" unique_id=1897700978]
-layout_mode = 2
-
-[node name="RestartButton" type="Button" parent="MarginContainer/MainLayout/StagePanel" unique_id=96358320]
-layout_mode = 2
+[node name="RestartButton" type="Button" parent="." unique_id=96358320]
+layout_mode = 0
+offset_left = 77.0
+offset_top = 1204.0
+offset_right = 1650.0
+offset_bottom = 1394.0
 text = "Play Again"
 
-[node name="DashboardPanel" type="VBoxContainer" parent="MarginContainer/MainLayout" unique_id=2136999456]
-custom_minimum_size = Vector2(300, 0)
-layout_mode = 2
-
-[node name="MoneyLabel" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=956064674]
-layout_mode = 2
+[node name="MoneyLabel" type="Label" parent="." unique_id=956064674]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -337.00012
+offset_bottom = 138.0
+grow_horizontal = 0
 text = "₦100,000"
 label_settings = SubResource("LabelSettings_eu5ij")
 
-[node name="GoodsLabel" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=1116526995]
-layout_mode = 2
-text = "INVENTORY"
-label_settings = SubResource("LabelSettings_6dpp2")
+[node name="MoneyPill" type="PanelContainer" parent="." unique_id=1849754284]
+layout_mode = 0
+offset_left = 1715.0
+offset_top = -167.0
+offset_right = 2015.0
+offset_bottom = -167.0
 
-[node name="InventoryGrid" type="GridContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=864118928]
-layout_mode = 2
-columns = 3
+[node name="HistoryTitle" type="Label" parent="." unique_id=860227060]
+layout_mode = 0
+offset_left = 1715.0
+offset_top = -167.0
+offset_right = 2015.0
+offset_bottom = -105.0
 
-[node name="MoneyPill" type="PanelContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=1849754284]
-layout_mode = 2
-
-[node name="HistoryTitle" type="Label" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=860227060]
-layout_mode = 2
-
-[node name="HistoryTimelineLog" type="VBoxContainer" parent="MarginContainer/MainLayout/DashboardPanel" unique_id=794217219]
-layout_mode = 2
+[node name="HistoryTimelineLog" type="VBoxContainer" parent="." unique_id=794217219]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.841
+anchor_top = 0.423
+anchor_right = 0.841
+anchor_bottom = 0.423
+offset_left = -231.54004
+offset_top = -391.68002
+offset_right = 282.45996
+offset_bottom = 582.31995
+grow_horizontal = 0
 
 [node name="PauseButton" type="Button" parent="." unique_id=1031637134]
 layout_mode = 0

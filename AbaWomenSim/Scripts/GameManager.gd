@@ -2,19 +2,19 @@ extends Control
 @export var timeline: Array[HistoricalEvent]
 #$ used to find nodes. It's like a map address.
 # UI REFERENCES: It grabs the nodes I made
-@onready var event_image = $MarginContainer/MainLayout/StagePanel/EventImage
-@onready var title_label = $MarginContainer/MainLayout/StagePanel/EventTitle
-@onready var desc_label = $MarginContainer/MainLayout/StagePanel/StoryScroll/EventDescription
-@onready var event_image2 = $MarginContainer/MainLayout/StagePanel/EventImage
-@onready var feedback_label = $MarginContainer/MainLayout/StagePanel/FeedbackLabel
-@onready var restart_button = $MarginContainer/MainLayout/StagePanel/RestartButton
-@onready var btn_a = $MarginContainer/MainLayout/StagePanel/ButtonContainer/ButtonOptionA
-@onready var btn_b = $MarginContainer/MainLayout/StagePanel/ButtonContainer/ButtonOptionB
-@onready var money_label = $MarginContainer/MainLayout/DashboardPanel/MoneyLabel
+@onready var event_image = $EventImage
+@onready var title_label = $EventTitle
+@onready var desc_label = $StoryScroll/EventDescription
+@onready var event_image2 = $EventImage
+@onready var feedback_label = $FeedbackLabel
+@onready var restart_button = $RestartButton
+@onready var btn_a = $ButtonContainer/ButtonOptionA
+@onready var btn_b = $ButtonContainer/ButtonOptionB
+@onready var money_label = $MoneyLabel
 #@onready var goods_label = $MarginContainer/MainLayout/DashboardPanel/GoodsLabel
 @onready var market_manager = $MarketManager
 # Grab the container where the history text will be injected
-@onready var history_log = $MarginContainer/MainLayout/DashboardPanel/StoryScroll/HistoryTimelineLog
+@onready var history_log = $HistoryTimelineLog
 
 # Note to self: use the grid later for the visual boxes
 #@onready var inventory_grid = $MarginContainer/MainLayout/DashboardPanel/InventoryGrid
@@ -140,7 +140,7 @@ func load_event(index: int):
 
 	
    # Reset Feedback
-	feedback_label.text = "Make a choice"
+	#feedback_label.text = "Make a choice"
 	# Re-enable buttons
 	btn_a.disabled = false
 	btn_b.disabled = false
