@@ -24,6 +24,7 @@
 [ext_resource type="Resource" uid="uid://6h3nqolpfkof" path="res://Yocha/AbaWomenSim/Events/event_18.tres" id="21_6td2t"]
 [ext_resource type="Resource" uid="uid://c7elx6y1uyluo" path="res://Yocha/AbaWomenSim/Events/event_19.tres" id="22_vf2v3"]
 [ext_resource type="Resource" uid="uid://cxr8dfei25isr" path="res://Yocha/AbaWomenSim/Events/event_20.tres" id="23_wni3v"]
+[ext_resource type="Texture2D" uid="uid://c8j1ocauv5yv2" path="res://icon.svg" id="25_6ic5e"]
 
 [sub_resource type="SystemFont" id="SystemFont_psig4"]
 subpixel_positioning = 0
@@ -54,8 +55,7 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 20.0
-offset_bottom = 80.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 10
@@ -83,6 +83,7 @@ anchor_right = 1.0
 offset_bottom = 96.0
 grow_horizontal = 2
 size_flags_vertical = 6
+theme_override_font_sizes/font_size = 44
 text = "YOCHA"
 label_settings = SubResource("LabelSettings_xr3nn")
 autowrap_mode = 2
@@ -91,7 +92,7 @@ autowrap_mode = 2
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 0
 offset_top = 80.0
-offset_right = 1414.0
+offset_right = 1379.0
 offset_bottom = 492.0
 
 [node name="EventDescription" type="RichTextLabel" parent="StoryScroll" unique_id=644149419]
@@ -103,7 +104,7 @@ fit_content = true
 autowrap_mode = 2
 
 [node name="EventImage" type="TextureRect" parent="." unique_id=2059433039]
-custom_minimum_size = Vector2(0, 500)
+custom_minimum_size = Vector2(700, 500)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.32900003
@@ -111,26 +112,27 @@ anchor_top = 0.572
 anchor_right = 0.32900003
 anchor_bottom = 0.572
 offset_left = -628.2601
-offset_top = -234.52002
-offset_right = 663.7399
-offset_bottom = 265.47998
+offset_top = -195.90405
+offset_right = 741.31995
+offset_bottom = 304.09595
 grow_vertical = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
+texture = ExtResource("25_6ic5e")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 6
 
 [node name="ButtonContainer" type="VBoxContainer" parent="." unique_id=2055688791]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.49300003
-anchor_top = 0.82600003
-anchor_right = 0.49300003
-anchor_bottom = 0.82600003
-offset_left = -335.42004
-offset_top = -216.16003
-offset_right = 334.57996
-offset_bottom = 117.839966
+anchor_left = 0.367
+anchor_top = 0.92200005
+anchor_right = 0.367
+anchor_bottom = 0.92200005
+offset_left = -702.64
+offset_top = -120.604065
+offset_right = 630.36
+offset_bottom = 84.395935
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 4
@@ -138,7 +140,7 @@ theme_override_constants/separation = 20
 alignment = 1
 
 [node name="ButtonOptionA" type="Button" parent="ButtonContainer" unique_id=1930034]
-custom_minimum_size = Vector2(600, 145)
+custom_minimum_size = Vector2(600, 50)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_tl6sc")
@@ -146,6 +148,7 @@ theme_override_colors/font_color = Color(0.9749437, 0.8775981, 0.405172, 1)
 theme_override_colors/font_focus_color = Color(0.9666117, 0.9740494, 0.67035335, 1)
 theme_override_colors/font_hover_color = Color(0.978218, 0.9116732, 0.35545, 1)
 theme_override_colors/icon_hover_color = Color(1, 0.74509805, 1, 1)
+theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_hvefp")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6ic5e")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_xmnsk")
@@ -155,11 +158,12 @@ text = "Option A"
 layout_mode = 2
 
 [node name="ButtonOptionB" type="Button" parent="ButtonContainer" unique_id=1845878108]
-custom_minimum_size = Vector2(600, 145)
+custom_minimum_size = Vector2(600, 50)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_colors/font_color = Color(0.95908576, 0.8840834, 0.41363144, 1)
 theme_override_colors/font_hover_color = Color(0.99607843, 0.8666667, 0.21960784, 1)
+theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = SubResource("StyleBoxEmpty_allh3")
 theme_override_styles/pressed = SubResource("StyleBoxEmpty_6td2t")
 theme_override_styles/hover = SubResource("StyleBoxEmpty_vf2v3")
@@ -175,11 +179,15 @@ text = "Play Again"
 
 [node name="MoneyLabel" type="Label" parent="." unique_id=956064674]
 layout_mode = 1
-anchors_preset = 1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -337.00012
-offset_bottom = 138.0
+anchors_preset = -1
+anchor_left = 0.86800003
+anchor_top = 0.066
+anchor_right = 0.86800003
+anchor_bottom = 0.066
+offset_left = -233.92004
+offset_top = -68.56
+offset_right = 233.07996
+offset_bottom = 69.44
 grow_horizontal = 0
 text = "₦100,000"
 label_settings = SubResource("LabelSettings_eu5ij")
