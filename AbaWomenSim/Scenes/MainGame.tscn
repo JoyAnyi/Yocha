@@ -34,6 +34,17 @@ line_spacing = 40.0
 font = SubResource("SystemFont_psig4")
 font_size = 70
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6ic5e"]
+bg_color = Color(1, 1, 1, 0.92941177)
+border_width_left = 14
+border_width_top = 14
+border_width_right = 14
+border_width_bottom = 14
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hvefp"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6ic5e"]
@@ -91,9 +102,12 @@ autowrap_mode = 2
 [node name="StoryScroll" type="ScrollContainer" parent="." unique_id=1188431560]
 custom_minimum_size = Vector2(0, 200)
 layout_mode = 0
+offset_left = 57.0
 offset_top = 80.0
-offset_right = 1379.0
-offset_bottom = 492.0
+offset_right = 1406.0
+offset_bottom = 407.0
+follow_focus = true
+draw_focus_border = true
 
 [node name="EventDescription" type="RichTextLabel" parent="StoryScroll" unique_id=644149419]
 layout_mode = 2
@@ -103,19 +117,25 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
 fit_content = true
 autowrap_mode = 2
 
-[node name="EventImage" type="TextureRect" parent="." unique_id=2059433039]
-custom_minimum_size = Vector2(700, 500)
+[node name="ImageFrame" type="PanelContainer" parent="." unique_id=2003941534]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.32900003
-anchor_top = 0.572
-anchor_right = 0.32900003
-anchor_bottom = 0.572
-offset_left = -628.2601
-offset_top = -195.90405
-offset_right = 741.31995
-offset_bottom = 304.09595
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -894.0
+offset_top = -153.0
+offset_right = 420.0
+offset_bottom = 347.0
+grow_horizontal = 2
 grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6ic5e")
+
+[node name="EventImage" type="TextureRect" parent="ImageFrame" unique_id=2059433039]
+clip_contents = true
+custom_minimum_size = Vector2(700, 500)
+layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
 texture = ExtResource("25_6ic5e")
@@ -213,7 +233,7 @@ anchor_left = 0.841
 anchor_top = 0.423
 anchor_right = 0.841
 anchor_bottom = 0.423
-offset_left = -231.54004
+offset_left = -197.7201
 offset_top = -391.68002
 offset_right = 282.45996
 offset_bottom = 582.31995

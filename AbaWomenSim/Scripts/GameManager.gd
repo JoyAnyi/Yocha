@@ -2,7 +2,7 @@ extends Control
 @export var timeline: Array[HistoricalEvent]
 #$ used to find nodes. It's like a map address.
 # UI REFERENCES: It grabs the nodes I made
-@onready var event_image = $EventImage
+@onready var event_image = $ImageFrame/EventImage
 @onready var title_label = $EventTitle
 @onready var desc_label = $StoryScroll/EventDescription
 @onready var event_image2 = $EventImage
