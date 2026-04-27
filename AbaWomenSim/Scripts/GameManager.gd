@@ -25,6 +25,7 @@ extends Control
 var player: PlayerStats
 var current_event_index: int = 0
 var current_event_data: HistoricalEvent
+@onready var pause_overlay = $PauseOverlay
 #var market: MarketManager
 
 # STARTUP SESSION
@@ -355,6 +356,20 @@ func save_state_to_json():
 	
 	print("Game saved! Data written to JSON.")
 
+func _on_pause_button_pressed() -> void:
+	#Show the dark overlay
+	pause_overlay.show()
+	#Freeze the game engine!
+	get_tree().paused = true
 
-func _on_timer_timeout() -> void:
-	pass # Replace with function body.
+func _on_resume_button_pressed() -> void:
+	#Hide the dark overlay
+	pause_overlay.hide()
+	#Unfreeze the game engine!
+	get_tree().paused = false
+
+
+func _on_exit_to_menu_button_pressed() -> void:
+	get_tree().paused = false
+	save_state_to_json()
+	get_tree().change_scene_to_file("res://Yocha/AbaWomenSim/Scenes/story_selection.tscn")

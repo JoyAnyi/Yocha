@@ -12,7 +12,7 @@ func _ready() -> void:
 
 func _on_start_button_pressed():
 	# This jumps from the Menu right into the game
-	get_tree().change_scene_to_file("res://Yocha/AbaWomenSim/Scenes/MainGame.tscn")
+	get_tree().change_scene_to_file("res://Yocha/AbaWomenSim/Scenes/story_selection.tscn")
 
 
 func _on_quit_button_pressed():

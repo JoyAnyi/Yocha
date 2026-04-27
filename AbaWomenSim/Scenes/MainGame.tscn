@@ -25,6 +25,7 @@
 [ext_resource type="Resource" uid="uid://c7elx6y1uyluo" path="res://Yocha/AbaWomenSim/Events/event_19.tres" id="22_vf2v3"]
 [ext_resource type="Resource" uid="uid://cxr8dfei25isr" path="res://Yocha/AbaWomenSim/Events/event_20.tres" id="23_wni3v"]
 [ext_resource type="Texture2D" uid="uid://c8j1ocauv5yv2" path="res://icon.svg" id="25_6ic5e"]
+[ext_resource type="Texture2D" uid="uid://ddnfftlfihq8j" path="res://Yocha/AbaWomenSim/Images/Screenshot 2026-04-27 at 02.13.48.png" id="26_xmnsk"]
 
 [sub_resource type="SystemFont" id="SystemFont_psig4"]
 subpixel_positioning = 0
@@ -200,9 +201,20 @@ offset_bottom = 582.31995
 grow_horizontal = 0
 
 [node name="PauseButton" type="Button" parent="." unique_id=1031637134]
-layout_mode = 0
-offset_right = 8.0
-offset_bottom = 8.0
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -131.0
+offset_top = 8.0
+offset_right = -20.0
+offset_bottom = 108.0
+grow_horizontal = 0
+icon = ExtResource("26_xmnsk")
+icon_alignment = 1
+expand_icon = true
 
 [node name="StoryAudio" type="AudioStreamPlayer" parent="." unique_id=663411801]
 
@@ -237,3 +249,42 @@ theme_override_styles/separator = SubResource("StyleBoxFlat_xmnsk")
 [node name="ButtonOptionB" type="Button" parent="ButtonContainer" unique_id=1034414985]
 layout_mode = 2
 text = "Option B"
+
+[node name="PauseOverlay" type="ColorRect" parent="." unique_id=1212848227]
+process_mode = 3
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.5882353)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PauseOverlay" unique_id=602113040]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ResumeButton" type="Button" parent="PauseOverlay/VBoxContainer" unique_id=1306729074]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.98622364, 0.86349356, 0.5433696, 1)
+text = "Resume Game"
+
+[node name="ExitToMenuButton" type="Button" parent="PauseOverlay/VBoxContainer" unique_id=308180475]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9914916, 0.8558643, 0.60468227, 1)
+text = "Return to Menu"
+
+[connection signal="pressed" from="PauseButton" to="." method="_on_pause_button_pressed"]
+[connection signal="pressed" from="PauseOverlay/VBoxContainer/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PauseOverlay/VBoxContainer/ExitToMenuButton" to="." method="_on_exit_to_menu_button_pressed"]
