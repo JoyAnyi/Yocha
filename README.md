@@ -1,5 +1,5 @@
 ## Yocha: Historical Economic Simulation
-An educational, narrative-driven historical simulator built in the Godot Engine (GDScript). Designed as a final-year Computer Science capstone, this project explores regional Nigerian history through interactive resource management and economic simulation.
+An educational, narrative-driven historical simulator built in the Godot Engine (GDScript). This project explores regional Nigerian history through interactive resource management and economic simulation.
 
 Rather than a traditional survival game with strict win/loss states, Yocha is engineered as an educational experience with a fixed historical timeline, allowing players to navigate the economic realities of 1929 Nigeria without the friction of "game over" screens.
 Currently featuring Module 1: The Aba Women's Riot (1929).
