@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://coytsf4fv3y5w"]
 
-[ext_resource type="Script" uid="uid://kmbck6u3k6hh" path="res://Yocha/AbaWomenSim/Scripts/splash_screen.gd" id="1_e2sfv"]
+[ext_resource type="Script" uid="uid://kmbck6u3k6hh" path="res://Yocha/AbaWomenSim/Scripts/SplashScreen.gd" id="1_e2sfv"]
 [ext_resource type="Texture2D" uid="uid://8h25s0nj55t0" path="res://Yocha/AbaWomenSim/Images/Screenshot 2026-04-26 at 19.42.41.png" id="2_byt07"]
 
 [sub_resource type="Animation" id="Animation_cmf2b"]
