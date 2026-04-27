@@ -29,6 +29,20 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_186yi"]
+bg_color = Color(0.37561435, 0.6802714, 0.4241957, 1)
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tr5or"]
+bg_color = Color(0.86612844, 0.49343842, 0.098923944, 1)
+
 [node name="StorySelection" type="Control" unique_id=46326236]
 layout_mode = 3
 anchors_preset = 15
@@ -86,9 +100,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -834.0
+offset_left = -892.0
 offset_top = -413.0
-offset_right = -297.0
+offset_right = -353.0
 offset_bottom = 487.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -121,4 +135,23 @@ vertical_alignment = 1
 [node name="Button" type="Button" parent="HBoxContainer/CardAba" unique_id=230243218]
 layout_mode = 2
 
+[node name="QuitButton" type="Button" parent="." unique_id=189251739]
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -292.0
+offset_top = 958.0
+offset_right = -6.0
+offset_bottom = 1077.0
+grow_horizontal = 0
+theme_override_colors/font_color = Color(0.66187596, 0.9666049, 0.63744396, 1)
+theme_override_fonts/font = ExtResource("1_ngqtv")
+theme_override_font_sizes/font_size = 80
+theme_override_styles/normal = SubResource("StyleBoxFlat_186yi")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tr5or")
+text = "Exit"
+
 [connection signal="pressed" from="HBoxContainer/CardAba/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

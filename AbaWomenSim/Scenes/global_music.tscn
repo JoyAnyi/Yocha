@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ds5yebqll6tot"]
+
+[ext_resource type="AudioStream" uid="uid://c7eorvbxh71sx" path="res://Yocha/AbaWomenSim/Audio/Corporate Harmonics_1.49.wav" id="1_gbia1"]
+
+[node name="GlobalMusic" type="AudioStreamPlayer" unique_id=427636859]
+stream = ExtResource("1_gbia1")
+autoplay = true

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c7eorvbxh71sx"
+path="res://.godot/imported/Corporate Harmonics_1.49.wav-8f85285151125d2ad9038768ee139bc6.sample"
+
+[deps]
+
+source_file="res://Yocha/AbaWomenSim/Audio/Corporate Harmonics_1.49.wav"
+dest_files=["res://.godot/imported/Corporate Harmonics_1.49.wav-8f85285151125d2ad9038768ee139bc6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

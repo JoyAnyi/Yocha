@@ -8,8 +8,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 
-
-
-func _on_animation_player_animation_finished(anim_name: StringName):
+func _on_animation_player_animation_finished(_anim_name: StringName):
 	# This swaps out the splash screen for your menu
 	get_tree().change_scene_to_file("res://Yocha/AbaWomenSim/Scenes/MainMenu.tscn")
