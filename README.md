@@ -44,5 +44,14 @@ The application features a fully functional pause-and-resume overlay that direct
 
 Time Scale Freezing: Utilising get_tree().paused = true to freeze all simulation logic, physics, and input processing.
 
+## Installation & Build Instructions
+Running from Source
+Clone this repository.
+
+Open the Godot Engine and click Import.
+
+Navigate to the cloned folder and select the project.godot file.
+
+Press F5 to run the project.
 ## Play the Exported Build
 The simulation is fully packaged and executable via browser or desktop native apps: https://legendv.itch.io/yocha.
