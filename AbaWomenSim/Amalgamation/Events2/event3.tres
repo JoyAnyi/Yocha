@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://cnruam8lrmae8"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_sgsuc"]
+
+[resource]
+script = ExtResource("1_sgsuc")
+title = "Railways and Colonial Expansion."
+description = "Governor Walter Egerton strongly supported railway expansion across Southern Nigeria. British officials believed railways would increase trade, move raw materials faster, and strengthen colonial authority. Construction began linking Lagos to Ibadan and later toward Oshogbo. Some officials praised the project as modernization, while critics argued that the railway mainly served British commercial interests."
+type = "political"
+option_a_text = "Expand railway construction aggressively"
+option_b_text = "Reduce railway spending"
+next_event_index_a = 3
+next_event_index_b = 3
+influence_change_a = 8
+influence_change_b = -2
+stability_change_a = 5
+stability_change_b = 3
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

@@ -4,6 +4,8 @@
 [ext_resource type="Script" uid="uid://onfhrtgaubr1" path="res://Yocha/AbaWomenSim/Scripts/StorySelection.gd" id="1_7ahqq"]
 [ext_resource type="FontFile" uid="uid://ctrycnc6rlr2u" path="res://Yocha/AbaWomenSim/Assets/Montreal-Bold.ttf" id="1_ngqtv"]
 [ext_resource type="Texture2D" uid="uid://camvp88qw2025" path="res://Yocha/AbaWomenSim/Images/Women_selling_goods_202603280039.jpeg" id="2_6d853"]
+[ext_resource type="Texture2D" uid="uid://d4fjqq1ny6q8p" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Federick Lugard.webp" id="5_k8jag"]
+[ext_resource type="FontFile" uid="uid://beg1kkf8su3vh" path="res://Yocha/AbaWomenSim/Assets/Nunito-BlackItalic.ttf" id="6_unupn"]
 
 [sub_resource type="GDScript" id="GDScript_186yi"]
 script/source = "extends ColorRect
@@ -28,6 +30,18 @@ corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4s1pi"]
+border_width_left = 10
+border_width_top = 10
+border_width_right = 10
+border_width_bottom = 10
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_186yi"]
 bg_color = Color(0.37561435, 0.6802714, 0.4241957, 1)
@@ -100,9 +114,9 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -892.0
+offset_left = -958.0
 offset_top = -413.0
-offset_right = -353.0
+offset_right = 445.0
 offset_bottom = 487.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -135,6 +149,31 @@ vertical_alignment = 1
 [node name="Button" type="Button" parent="HBoxContainer/CardAba" unique_id=230243218]
 layout_mode = 2
 
+[node name="CardAmag" type="PanelContainer" parent="HBoxContainer" unique_id=1739863581]
+clip_contents = true
+custom_minimum_size = Vector2(350, 450)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4s1pi")
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/CardAmag" unique_id=1472768405]
+layout_mode = 2
+texture = ExtResource("5_k8jag")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="ColorRect" type="ColorRect" parent="HBoxContainer/CardAmag" unique_id=390694713]
+layout_mode = 2
+color = Color(1, 1, 1, 0)
+
+[node name="Label" type="Label" parent="HBoxContainer/CardAmag" unique_id=30867981]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("6_unupn")
+theme_override_font_sizes/font_size = 50
+text = "1914 AMALGAMATION"
+
+[node name="Button2" type="Button" parent="HBoxContainer/CardAmag" unique_id=191354521]
+layout_mode = 2
+
 [node name="QuitButton" type="Button" parent="." unique_id=189251739]
 custom_minimum_size = Vector2(0, 80)
 layout_mode = 1
@@ -154,4 +193,5 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_tr5or")
 text = "Exit"
 
 [connection signal="pressed" from="HBoxContainer/CardAba/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="HBoxContainer/CardAmag/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

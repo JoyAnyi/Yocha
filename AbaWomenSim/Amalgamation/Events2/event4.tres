@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://wmgm1y28djnr"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_ofu0d"]
+
+[resource]
+script = ExtResource("1_ofu0d")
+title = "Colonial Budgets Under Pressure."
+description = " As railway construction and administration expanded, colonial spending increased rapidly. Southern Nigeria generated revenue through trade and customs duties, but the Northern Protectorate struggled financially. British officials worried that maintaining two separate administrations was expensive. Some believed combining both territories would allow Southern revenue to support Northern administration."
+type = "political"
+option_a_text = "Explore a shared colonial budget"
+option_b_text = "Keep finances fully separate"
+next_event_index_a = 4
+next_event_index_b = 4
+influence_change_a = 7
+influence_change_b = -3
+stability_change_a = 4
+stability_change_b = 4
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

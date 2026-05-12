@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dyr7mnipwd0ej"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_l2ugd"]
+
+[resource]
+script = ExtResource("1_l2ugd")
+title = "The Growth of Southern Nigeria."
+description = "In 1900, the British formed the Southern Nigeria Protectorate from coastal territories formerly controlled by the Royal Niger Company. Lagos later became part of this growing administration. British officials viewed Southern Nigeria as economically valuable because of palm oil exports, trade routes, and customs duties collected at the ports. Colonial officers believed stronger administration would increase Britain’s economic influence in West Africa."
+price_multiplier = 1.3
+risk_level = 2
+type = "political"
+option_a_text = "Expand British administration further inland"
+option_b_text = "Focus only on coastal trade centers"
+next_event_index_a = 2
+next_event_index_b = 2
+influence_change_a = 6
+influence_change_b = 3
+stability_change_a = -1
+stability_change_b = 4
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

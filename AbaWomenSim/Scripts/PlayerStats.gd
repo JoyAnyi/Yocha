@@ -8,6 +8,8 @@ signal stats_updated
 #Starting money
 var money: int = 100000
 var risk: int = 0
+var influence: int = 50
+var stability: int = 50
 #Starting inventory count
 var goods: int = 0
 var inventory = {
@@ -61,3 +63,13 @@ func record_choice(event_title: String, choice_made: String):
 		"event": event_title,
 		"choice": choice_made
 	})
+
+func update_influence(amount: int):
+	influence += amount
+	influence = clamp(influence, 0, 100)
+	stats_updated.emit()
+
+func update_stability(amount: int):
+	stability += amount
+	stability = clamp(stability, 0, 100)
+	stats_updated.emit()

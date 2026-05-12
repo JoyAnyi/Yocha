@@ -1,32 +1,19 @@
-[gd_scene format=3 uid="uid://xr8050hyyt81"]
+[gd_scene format=3 uid="uid://ccwitxcofsqr"]
 
-[ext_resource type="Script" uid="uid://cg501hww2vopi" path="res://Yocha/AbaWomenSim/Scripts/GameManager.gd" id="1_eosr6"]
-[ext_resource type="Theme" uid="uid://c57q6qcyw6c3e" path="res://Yocha/AbaWomenSim/Assets/GameTheme.tres" id="1_tl6sc"]
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="2_xr3nn"]
-[ext_resource type="Resource" uid="uid://bvdrhjmarcen8" path="res://Yocha/AbaWomenSim/Events/Event_01.tres" id="4_x4028"]
-[ext_resource type="Script" uid="uid://h1lk51ahb7u8" path="res://Yocha/AbaWomenSim/Scripts/MarketManager.gd" id="5_ci6wu"]
-[ext_resource type="Resource" uid="uid://wmbl0gc1hklv" path="res://Yocha/AbaWomenSim/Events/event_02.tres" id="5_jpbm4"]
-[ext_resource type="Resource" uid="uid://bci7h5tx6ldko" path="res://Yocha/AbaWomenSim/Events/event_03.tres" id="6_ugwnq"]
-[ext_resource type="Resource" uid="uid://ck8pyvm4nrnhs" path="res://Yocha/AbaWomenSim/Events/event_04.tres" id="7_dn7gj"]
-[ext_resource type="Resource" uid="uid://bb0f18tmc8836" path="res://Yocha/AbaWomenSim/Events/event_05.tres" id="8_ec6m2"]
-[ext_resource type="Resource" uid="uid://dfucfsj8dpfw2" path="res://Yocha/AbaWomenSim/Events/event_06.tres" id="9_s87t3"]
-[ext_resource type="Resource" uid="uid://cpb8f0qy7g1et" path="res://Yocha/AbaWomenSim/Events/event_7.tres" id="10_68ygn"]
-[ext_resource type="Resource" uid="uid://dmbe8rtaq2yxq" path="res://Yocha/AbaWomenSim/Events/event_8.tres" id="11_eljef"]
-[ext_resource type="Resource" uid="uid://ban34h1v5f1oo" path="res://Yocha/AbaWomenSim/Events/event_9.tres" id="12_bxye6"]
-[ext_resource type="Resource" uid="uid://walf3sq1wdei" path="res://Yocha/AbaWomenSim/Events/event_12.tres" id="13_gijy1"]
-[ext_resource type="Resource" uid="uid://dpk3wd0tiffp8" path="res://Yocha/AbaWomenSim/Events/event_10.tres" id="13_hvefp"]
-[ext_resource type="Resource" uid="uid://dqm4nxv2ebtwi" path="res://Yocha/AbaWomenSim/Events/event_11.tres" id="14_6ic5e"]
-[ext_resource type="Resource" uid="uid://brmhadbks6ugs" path="res://Yocha/AbaWomenSim/Events/event_13.tres" id="14_lopmg"]
-[ext_resource type="Resource" uid="uid://b202xl807ghqv" path="res://Yocha/AbaWomenSim/Events/event_14.tres" id="15_lopmg"]
-[ext_resource type="Resource" uid="uid://ctpu6s6hid7ri" path="res://Yocha/AbaWomenSim/Events/event_15.tres" id="16_q7iaj"]
-[ext_resource type="Resource" uid="uid://4b0mv81sf424" path="res://Yocha/AbaWomenSim/Events/event_16.tres" id="19_xmnsk"]
-[ext_resource type="Resource" uid="uid://dcdxft14nbfiv" path="res://Yocha/AbaWomenSim/Events/event_17.tres" id="20_allh3"]
-[ext_resource type="Resource" uid="uid://6h3nqolpfkof" path="res://Yocha/AbaWomenSim/Events/event_18.tres" id="21_6td2t"]
-[ext_resource type="Resource" uid="uid://c7elx6y1uyluo" path="res://Yocha/AbaWomenSim/Events/event_19.tres" id="22_vf2v3"]
-[ext_resource type="Resource" uid="uid://cxr8dfei25isr" path="res://Yocha/AbaWomenSim/Events/event_20.tres" id="23_wni3v"]
-[ext_resource type="Texture2D" uid="uid://c8j1ocauv5yv2" path="res://icon.svg" id="25_6ic5e"]
-[ext_resource type="Texture2D" uid="uid://ddnfftlfihq8j" path="res://Yocha/AbaWomenSim/Images/Screenshot 2026-04-27 at 02.13.48.png" id="26_xmnsk"]
-[ext_resource type="Texture2D" uid="uid://d2yunq31gaoqi" path="res://Yocha/AbaWomenSim/Assets/Sprite/villager_male.png" id="27_allh3"]
+[ext_resource type="Theme" uid="uid://c57q6qcyw6c3e" path="res://Yocha/AbaWomenSim/Assets/GameTheme.tres" id="1_05wlh"]
+[ext_resource type="Script" uid="uid://de4ytagfuu61p" path="res://Yocha/AbaWomenSim/Scripts/AmalgamationManager.gd" id="2_gji4a"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="3_db3pi"]
+[ext_resource type="Resource" uid="uid://ldc2udrmkuvt" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event1.tres" id="4_h16gj"]
+[ext_resource type="Resource" uid="uid://dyr7mnipwd0ej" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event2.tres" id="5_us8x2"]
+[ext_resource type="Resource" uid="uid://cnruam8lrmae8" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event3.tres" id="6_yvycv"]
+[ext_resource type="Resource" uid="uid://wmgm1y28djnr" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event4.tres" id="7_gji4a"]
+[ext_resource type="Resource" uid="uid://dwdpatl3slu5m" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event5.tres" id="8_gji4a"]
+[ext_resource type="Resource" uid="uid://db0dbxjemwxad" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event6.tres" id="9_4ec3w"]
+[ext_resource type="Resource" uid="uid://b87el3hp7ll5p" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event7.tres" id="10_ruugi"]
+[ext_resource type="Script" uid="uid://h1lk51ahb7u8" path="res://Yocha/AbaWomenSim/Scripts/MarketManager.gd" id="24_ohytq"]
+[ext_resource type="Texture2D" uid="uid://c8j1ocauv5yv2" path="res://icon.svg" id="25_4ybpj"]
+[ext_resource type="Texture2D" uid="uid://ddnfftlfihq8j" path="res://Yocha/AbaWomenSim/Images/Screenshot 2026-04-27 at 02.13.48.png" id="26_g1pwr"]
+[ext_resource type="Texture2D" uid="uid://d2yunq31gaoqi" path="res://Yocha/AbaWomenSim/Assets/Sprite/villager_male.png" id="27_1yduy"]
 
 [sub_resource type="SystemFont" id="SystemFont_psig4"]
 subpixel_positioning = 0
@@ -58,91 +45,91 @@ border_width_right = 4
 border_width_bottom = 4
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6td2t"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(0, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vf2v3"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(16, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wni3v"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(32, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_rk1y2"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(48, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ehv5i"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(0, 99, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_us1io"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(16, 99, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tlfop"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(32, 99, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ptry6"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(48, 99, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2rgdg"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(48, 66, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0ff86"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(32, 66, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tnmwp"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(16, 66, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_k2yn4"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(0, 66, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_3b7t1"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(0, 33, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l860o"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(16, 33, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_t3jn7"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(32, 33, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_iglw6"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(48, 33, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4pu58"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(0, 99, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_82gbt"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(48, 99, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4oluc"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(16, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y6muh"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(48, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b457m"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(32, 0, 16, 33)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_l6scs"]
-atlas = ExtResource("27_allh3")
+atlas = ExtResource("27_1yduy")
 region = Rect2(0, 0, 16, 33)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_wvqe1"]
@@ -229,7 +216,7 @@ animations = [{
 "speed": 4.0
 }]
 
-[node name="MainGame" type="Control" unique_id=749305322]
+[node name="MainGame2" type="Control" unique_id=749305322]
 custom_minimum_size = Vector2(1152, 648)
 layout_mode = 3
 anchors_preset = 15
@@ -240,12 +227,12 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 10
 size_flags_vertical = 6
-theme = ExtResource("1_tl6sc")
-script = ExtResource("1_eosr6")
-timeline = Array[ExtResource("2_xr3nn")]([ExtResource("4_x4028"), ExtResource("5_jpbm4"), ExtResource("6_ugwnq"), ExtResource("7_dn7gj"), ExtResource("8_ec6m2"), ExtResource("9_s87t3"), ExtResource("10_68ygn"), ExtResource("11_eljef"), ExtResource("12_bxye6"), ExtResource("13_hvefp"), ExtResource("14_6ic5e"), ExtResource("13_gijy1"), ExtResource("14_lopmg"), ExtResource("15_lopmg"), ExtResource("16_q7iaj"), ExtResource("19_xmnsk"), ExtResource("20_allh3"), ExtResource("21_6td2t"), ExtResource("22_vf2v3"), ExtResource("23_wni3v")])
+theme = ExtResource("1_05wlh")
+script = ExtResource("2_gji4a")
+timeline = Array[ExtResource("3_db3pi")]([ExtResource("4_h16gj"), ExtResource("5_us8x2"), ExtResource("6_yvycv"), ExtResource("7_gji4a"), ExtResource("8_gji4a"), ExtResource("9_4ec3w"), ExtResource("10_ruugi"), null])
 
 [node name="MarketManager" type="Node" parent="." unique_id=1876693958]
-script = ExtResource("5_ci6wu")
+script = ExtResource("24_ohytq")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=523095635]
 layout_mode = 1
@@ -311,7 +298,7 @@ custom_minimum_size = Vector2(700, 500)
 layout_mode = 2
 size_flags_vertical = 3
 size_flags_stretch_ratio = 5.0
-texture = ExtResource("25_6ic5e")
+texture = ExtResource("25_4ybpj")
 expand_mode = 1
 stretch_mode = 6
 
@@ -388,7 +375,7 @@ offset_top = 8.0
 offset_right = -20.0
 offset_bottom = 108.0
 grow_horizontal = 0
-icon = ExtResource("26_xmnsk")
+icon = ExtResource("26_g1pwr")
 icon_alignment = 1
 expand_icon = true
 

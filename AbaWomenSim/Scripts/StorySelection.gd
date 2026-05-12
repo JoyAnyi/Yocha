@@ -11,7 +11,10 @@ func _on_button_pressed():
 	# This jumps from the Menu right into the game
 	get_tree().change_scene_to_file("res://Yocha/AbaWomenSim/Scenes/MainGame.tscn")
 
-
-func _on_quit_button_pressed() -> void:
-	# This safely closes the application
-	get_tree().quit()
+func _on_button_2_pressed() -> void:
+	change.text = "LOADING..."
+	
+	await get_tree().create_timer(1.3).timeout
+	GlobalMusic.stop()
+	# This jumps from the Menu right into the game
+	get_tree().change_scene_to_file("res://Yocha/AbaWomenSim/Scenes/Amalgamation.tscn")

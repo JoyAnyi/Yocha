@@ -187,6 +187,19 @@ func handle_decision(choice: String):
 		handle_political_event(choice)
 
 	player.record_choice(current_event_data.title, choice)
+	if current_event_data.type == "political":
+
+		player.risk += 2
+		player.stats_updated.emit()
+
+		await get_tree().create_timer(1.0).timeout
+
+		if choice == "A":
+			load_event(current_event_data.next_event_index_a)
+		else:
+			load_event(current_event_data.next_event_index_b)
+
+	return
 	#Updates the sidebar to show the new choice
 	update_history_ui()
 	var good_name: String

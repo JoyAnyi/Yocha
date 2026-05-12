@@ -19,7 +19,9 @@ class_name HistoricalEvent
 #To track how dangerous the streets are.
 @export var risk_level: int = 0
 #Helps distinguish Story vs Shop events.
-@export var type: String = "trade"
+#@export var type: String = "trade"
+@export_enum("trade", "political", "hybrid")
+var type: String = "trade"
 
 # CHOICES: What the player can do
 @export var option_a_text: String =" "  
@@ -40,3 +42,9 @@ class_name HistoricalEvent
 @export_group("Branching Destinations")
 @export var next_event_index_a: int = 0
 @export var next_event_index_b: int = 0
+
+@export_group("Political Stats")
+@export var influence_change_a: int = 0
+@export var influence_change_b: int = 0
+@export var stability_change_a: int = 0
+@export var stability_change_b: int = 0
