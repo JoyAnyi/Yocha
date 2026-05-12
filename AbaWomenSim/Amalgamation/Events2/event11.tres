@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://c2qcaxieffvgl"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_fc7sl"]
+
+[resource]
+script = ExtResource("1_fc7sl")
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"
