@@ -1,5 +1,5 @@
 ## Yocha: Historical Economic Simulation
-An educational, narrative-driven historical simulator built in the Godot Engine (GDScript). Designed as a final-year Computer Science capstone, this project explores regional Nigerian history through interactive resource management and economic simulation.
+An educational, narrative-driven historical simulator built in the Godot Engine (GDScript). This project explores regional Nigerian history through interactive resource management and economic simulation.
 
 Rather than a traditional survival game with strict win/loss states, Yocha is engineered as an educational experience with a fixed historical timeline, allowing players to navigate the economic realities of 1929 Nigeria without the friction of "game over" screens.
 Currently featuring Module 1: The Aba Women's Riot (1929).
@@ -44,5 +44,14 @@ The application features a fully functional pause-and-resume overlay that direct
 
 Time Scale Freezing: Utilising get_tree().paused = true to freeze all simulation logic, physics, and input processing.
 
+## Installation & Build Instructions
+Running from Source
+Clone this repository.
+
+Open the Godot Engine and click Import.
+
+Navigate to the cloned folder and select the project.godot file.
+
+Press F5 to run the project.
 ## Play the Exported Build
 The simulation is fully packaged and executable via browser or desktop native apps: https://legendv.itch.io/yocha.
