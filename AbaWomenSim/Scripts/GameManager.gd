@@ -17,7 +17,6 @@ extends Control
 
 # Grab the container where the history text will be injected
 @onready var history_log = $ScrollContainer/HistoryTimelineLog
-
 # Note to self: use the grid later for the visual boxes
 #@onready var inventory_grid = $MarginContainer/MainLayout/DashboardPanel/InventoryGrid
 @onready var story_audio = $StoryAudio

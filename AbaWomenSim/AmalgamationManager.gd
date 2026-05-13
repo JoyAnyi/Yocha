@@ -92,7 +92,7 @@ func load_event(index: int):
 		
 		# Wait for the tween sliding to completely finish
 		await end_tween.finished
-		return
+		#return
 
 		#Update the UI
 		title_label.text = "Historical Summary"
@@ -180,26 +180,26 @@ func _on_button_b_pressed():
 func handle_decision(choice: String):
 	btn_a.disabled = true
 	btn_b.disabled = true
-	if current_event_data.type == "trade":
-		handle_decision(choice)
-
-	elif current_event_data.type == "political":
+	if current_event_data.type == "political":
 		handle_political_event(choice)
+		return
+
+		
 
 	player.record_choice(current_event_data.title, choice)
-	if current_event_data.type == "political":
-
-		player.risk += 2
-		player.stats_updated.emit()
-
-		await get_tree().create_timer(1.0).timeout
-
-		if choice == "A":
-			load_event(current_event_data.next_event_index_a)
-		else:
-			load_event(current_event_data.next_event_index_b)
-
-	return
+	#if current_event_data.type == "political":
+#
+		#player.risk += 2
+		#player.stats_updated.emit()
+#
+		#await get_tree().create_timer(1.0).timeout
+#
+		#if choice == "A":
+			#load_event(current_event_data.next_event_index_a)
+		#else:
+			#load_event(current_event_data.next_event_index_b)
+#
+		#return
 	#Updates the sidebar to show the new choice
 	update_history_ui()
 	var good_name: String
@@ -463,6 +463,13 @@ func handle_political_event(choice: String):
 	var influence_change = 0
 	var stability_change = 0
 
+	if current_event_data.type == "political":
+
+		player.risk += 2
+		player.stats_updated.emit()
+
+		await get_tree().create_timer(1.0).timeout
+		
 	if choice == "A":
 		influence_change = current_event_data.influence_change_a
 		stability_change = current_event_data.stability_change_a
@@ -481,3 +488,4 @@ func handle_political_event(choice: String):
 		load_event(current_event_data.next_event_index_a)
 	else:
 		load_event(current_event_data.next_event_index_b)
+		

@@ -43,6 +43,8 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 corner_detail = 20
 
+[sub_resource type="GDScript" id="GDScript_tr5or"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_186yi"]
 bg_color = Color(0.37561435, 0.6802714, 0.4241957, 1)
 border_width_left = 10
@@ -165,7 +167,7 @@ stretch_mode = 4
 layout_mode = 2
 color = Color(1, 1, 1, 0)
 
-[node name="Label" type="Label" parent="HBoxContainer/CardAmag" unique_id=30867981]
+[node name="AmagLabel" type="Label" parent="HBoxContainer/CardAmag" unique_id=30867981]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("6_unupn")
 theme_override_font_sizes/font_size = 50
@@ -173,6 +175,7 @@ text = "1914 AMALGAMATION"
 
 [node name="Button2" type="Button" parent="HBoxContainer/CardAmag" unique_id=191354521]
 layout_mode = 2
+script = SubResource("GDScript_tr5or")
 
 [node name="QuitButton" type="Button" parent="." unique_id=189251739]
 custom_minimum_size = Vector2(0, 80)
