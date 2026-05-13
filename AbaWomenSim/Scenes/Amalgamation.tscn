@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ccwitxcofsqr"]
 
 [ext_resource type="Theme" uid="uid://c57q6qcyw6c3e" path="res://Yocha/AbaWomenSim/Assets/GameTheme.tres" id="1_05wlh"]
-[ext_resource type="Script" uid="uid://de4ytagfuu61p" path="res://Yocha/AbaWomenSim/Scripts/AmalgamationManager.gd" id="2_gji4a"]
+[ext_resource type="Script" uid="uid://de4ytagfuu61p" path="res://Yocha/AbaWomenSim/AmalgamationManager.gd" id="2_gji4a"]
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="3_db3pi"]
 [ext_resource type="Resource" uid="uid://ldc2udrmkuvt" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event1.tres" id="4_h16gj"]
 [ext_resource type="Resource" uid="uid://dyr7mnipwd0ej" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event2.tres" id="5_us8x2"]
