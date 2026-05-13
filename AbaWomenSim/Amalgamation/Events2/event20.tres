@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://wfbmn715k838"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_3grlo"]
+[ext_resource type="Texture2D" uid="uid://8al4dfeob20" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Nigeria_amalgamation_legacy_map_…_202605130049.jpeg" id="1_meyk7"]
+
+[resource]
+script = ExtResource("1_3grlo")
+title = "The Legacy of Amalgamation."
+description = "Although amalgamation creates one colony called Nigeria, deep cultural, political, and economic differences remain between regions. The decisions made during British colonial rule will shape future debates about identity, governance, representation, and national unity for generations to come."
+event_image = ExtResource("1_meyk7")
+type = "political"
+option_a_text = " View amalgamation as necessary unity"
+option_b_text = " Reflect on its lasting divisions"
+next_event_index_a = -1
+next_event_index_b = -1
+influence_change_a = 10
+influence_change_b = 10
+stability_change_a = 5
+stability_change_b = -2
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

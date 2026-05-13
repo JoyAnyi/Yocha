@@ -1,7 +1,20 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://c2qcaxieffvgl"]
 
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_fc7sl"]
+[ext_resource type="Texture2D" uid="uid://cot30xcnrxwvo" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Nigerian_Council_meeting_colonia…_202605130016.jpeg" id="1_m7xsb"]
 
 [resource]
 script = ExtResource("1_fc7sl")
+title = "A New Advisory Council."
+description = "The British establish the Nigerian Council to bring representatives from different provinces into discussions about administration. However, the council has limited authority, and many Nigerians believe it exists mainly to support colonial decisions rather than represent local interests."
+event_image = ExtResource("1_m7xsb")
+type = "political"
+option_a_text = " Expand the council’s influence"
+option_b_text = " Keep authority with colonial officers"
+next_event_index_a = 11
+next_event_index_b = 11
+influence_change_a = 7
+influence_change_b = 10
+stability_change_a = 5
+stability_change_b = -5
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

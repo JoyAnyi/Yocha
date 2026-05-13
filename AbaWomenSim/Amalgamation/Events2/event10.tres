@@ -1,17 +1,20 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://cn0c12oxrplw5"]
 
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_uwlh8"]
+[ext_resource type="Texture2D" uid="uid://bghw1mhx16udw" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/event10.jpeg" id="1_6q3ot"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_8tcac"]
 
 [resource]
-script = ExtResource("1_uwlh8")
-title = "The Amalgamation of Nigeria"
-description = "On January 1st, 1914, the Colony and Protectorate of Southern Nigeria officially merges with the Northern Nigeria Protectorate. Frederick Lugard becomes Governor-General of the newly unified Nigeria. Though presented as a step toward administrative efficiency, the merger joins together regions with major cultural, political, and economic differences that will shape Nigeria’s future history."
-option_a_text = " Celebrate the new unified colony"
-option_b_text = " Question the long-term consequences"
+script = ExtResource("1_8tcac")
+title = "Building a Unified Government."
+description = "As preparations for amalgamation continue, Lugard establishes central institutions in Lagos. Departments such as railways, treasury, medical services, posts, telegraphs, and legal administration begin operating under centralized control. British officials describe the reforms as necessary for efficiency, though critics fear excessive concentration of power."
+event_image = ExtResource("1_6q3ot")
+type = "political"
+option_a_text = "Strengthen centralized administration"
+option_b_text = "Preserve regional independence"
 next_event_index_a = 10
 next_event_index_b = 10
-influence_change_a = 15
-influence_change_b = 3
-stability_change_a = 6
-stability_change_b = -2
+influence_change_a = 10
+influence_change_b = 5
+stability_change_a = -5
+stability_change_b = 5
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

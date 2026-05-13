@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://5oemodlx7ne0"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_6oa34"]
+[ext_resource type="Texture2D" uid="uid://b2fxs4t6w0hjo" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Amalgamation.jpeg" id="1_6xppk"]
+
+[resource]
+script = ExtResource("1_6oa34")
+title = "The Amalgamation of Nigeria."
+description = "On January 1st, 1914, the Colony and Protectorate of Southern Nigeria officially merges with the Northern Nigeria Protectorate. Frederick Lugard becomes Governor-General of the newly unified Nigeria. Britain presents the merger as a major administrative achievement designed to improve efficiency and financial stability across the colony."
+event_image = ExtResource("1_6xppk")
+type = "political"
+option_a_text = " Celebrate the new unified colony"
+option_b_text = " Question the long-term consequences"
+next_event_index_a = 19
+next_event_index_b = 19
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

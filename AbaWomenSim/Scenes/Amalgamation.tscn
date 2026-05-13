@@ -10,6 +10,19 @@
 [ext_resource type="Resource" uid="uid://dwdpatl3slu5m" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event5.tres" id="8_gji4a"]
 [ext_resource type="Resource" uid="uid://db0dbxjemwxad" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event6.tres" id="9_4ec3w"]
 [ext_resource type="Resource" uid="uid://b87el3hp7ll5p" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event7.tres" id="10_ruugi"]
+[ext_resource type="Resource" uid="uid://nyuv1okmqunx" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event8.tres" id="11_05wlh"]
+[ext_resource type="Resource" uid="uid://mp87be7ewe7o" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event9.tres" id="12_bprn8"]
+[ext_resource type="Resource" uid="uid://cn0c12oxrplw5" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event10.tres" id="13_db3pi"]
+[ext_resource type="Resource" uid="uid://c2qcaxieffvgl" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event11.tres" id="14_sgsn3"]
+[ext_resource type="Resource" uid="uid://bkivngfqa5gm7" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event12.tres" id="15_h8y04"]
+[ext_resource type="Resource" uid="uid://0xm5kcbe2r6u" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event13.tres" id="16_swhlv"]
+[ext_resource type="Resource" uid="uid://bsav7f074wjts" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event14.tres" id="17_xoehp"]
+[ext_resource type="Resource" uid="uid://l8kjlxhig6d" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event15.tres" id="18_mpkyo"]
+[ext_resource type="Resource" uid="uid://dgckxv162cv4w" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event16.tres" id="19_17doe"]
+[ext_resource type="Resource" uid="uid://cujkvia4yc1v1" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event17.tres" id="20_dedds"]
+[ext_resource type="Resource" uid="uid://c6yi20p7u4eg1" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event18.tres" id="21_jp0gy"]
+[ext_resource type="Resource" uid="uid://5oemodlx7ne0" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event19.tres" id="22_ae15o"]
+[ext_resource type="Resource" uid="uid://wfbmn715k838" path="res://Yocha/AbaWomenSim/Amalgamation/Events2/event20.tres" id="23_jsd83"]
 [ext_resource type="Script" uid="uid://h1lk51ahb7u8" path="res://Yocha/AbaWomenSim/Scripts/MarketManager.gd" id="24_ohytq"]
 [ext_resource type="Texture2D" uid="uid://c8j1ocauv5yv2" path="res://icon.svg" id="25_4ybpj"]
 [ext_resource type="Texture2D" uid="uid://ddnfftlfihq8j" path="res://Yocha/AbaWomenSim/Images/Screenshot 2026-04-27 at 02.13.48.png" id="26_g1pwr"]
@@ -229,7 +242,7 @@ size_flags_horizontal = 10
 size_flags_vertical = 6
 theme = ExtResource("1_05wlh")
 script = ExtResource("2_gji4a")
-timeline = Array[ExtResource("3_db3pi")]([ExtResource("4_h16gj"), ExtResource("5_us8x2"), ExtResource("6_yvycv"), ExtResource("7_gji4a"), ExtResource("8_gji4a"), ExtResource("9_4ec3w"), ExtResource("10_ruugi"), null])
+timeline = Array[ExtResource("3_db3pi")]([ExtResource("4_h16gj"), ExtResource("5_us8x2"), ExtResource("6_yvycv"), ExtResource("7_gji4a"), ExtResource("8_gji4a"), ExtResource("9_4ec3w"), ExtResource("10_ruugi"), ExtResource("11_05wlh"), ExtResource("12_bprn8"), ExtResource("13_db3pi"), ExtResource("14_sgsn3"), ExtResource("15_h8y04"), ExtResource("16_swhlv"), ExtResource("17_xoehp"), ExtResource("18_mpkyo"), ExtResource("19_17doe"), ExtResource("20_dedds"), ExtResource("21_jp0gy"), ExtResource("22_ae15o"), ExtResource("23_jsd83")])
 
 [node name="MarketManager" type="Node" parent="." unique_id=1876693958]
 script = ExtResource("24_ohytq")
@@ -322,7 +335,6 @@ offset_top = -68.56
 offset_right = 233.07996
 offset_bottom = 69.44
 grow_horizontal = 0
-text = "₦100,000"
 label_settings = SubResource("LabelSettings_eu5ij")
 
 [node name="FeedbackLabel" type="Label" parent="." unique_id=344577999]

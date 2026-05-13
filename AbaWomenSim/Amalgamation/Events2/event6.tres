@@ -1,11 +1,13 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://db0dbxjemwxad"]
 
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_y8obr"]
+[ext_resource type="Texture2D" uid="uid://2n3p64qtn6h" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Colonial_officials_compare_econo…_202605130003.jpeg" id="1_ikskq"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_v2u5g"]
 
 [resource]
-script = ExtResource("1_y8obr")
-title = "Balancing the Colonial Economy"
+script = ExtResource("1_v2u5g")
+title = "Balancing the Colonial Economy."
 description = "British officials present financial reports comparing Northern and Southern Nigeria. The North struggles with administrative deficits, while the South generates stronger customs revenue through Lagos and coastal trade. Lugard argues that combining both protectorates would create a financially stable colony. Critics warn that the South may end up funding Northern administration without equal political influence."
+event_image = ExtResource("1_ikskq")
 type = "political"
 option_a_text = "Support financial amalgamation"
 option_b_text = "Oppose merging the budgets"

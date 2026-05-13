@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://l8kjlxhig6d"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_j603h"]
+[ext_resource type="Texture2D" uid="uid://dypco8xvhkt50" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Nigerian_diversity_before_amalga…_202605130037.jpeg" id="1_m0e5a"]
+
+[resource]
+script = ExtResource("1_j603h")
+title = "A Colony of Many Peoples."
+description = "British officials recognize that the North and South differ greatly in religion, administration, education, and political traditions. Some believe gradual integration is necessary, while others think unification should happen quickly to strengthen imperial authority."
+event_image = ExtResource("1_m0e5a")
+type = "political"
+option_a_text = " Respect regional differences"
+option_b_text = " Enforce stronger unity policies"
+next_event_index_a = 15
+next_event_index_b = 15
+influence_change_a = 5
+influence_change_b = 13
+stability_change_a = 7
+stability_change_b = -8
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

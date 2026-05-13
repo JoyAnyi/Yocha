@@ -1,18 +1,20 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://mp87be7ewe7o"]
 
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_dhpsr"]
+[ext_resource type="Texture2D" uid="uid://j4xo347nwbn2" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Emirs_meet_British_officials_palace_202605130010.jpeg" id="1_0t10g"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_i32a5"]
 
 [resource]
-script = ExtResource("1_dhpsr")
-title = "Fear of Southern Influence"
+script = ExtResource("1_i32a5")
+title = "Fear of Southern Influence."
 description = "Several Northern officials and emirs worry that amalgamation may expose the North to Southern political ideas, Christianity, and Western education. Frederick Lugard reassures Northern leaders that indirect rule and traditional authority structures will remain protected under British administration."
+event_image = ExtResource("1_0t10g")
 type = "political"
 option_a_text = "Push one unified system immediately"
 option_b_text = "Preserve indirect rule in the North"
 next_event_index_a = 9
 next_event_index_b = 9
-influence_change_a = 14
-influence_change_b = -10
+influence_change_a = 6
+influence_change_b = 14
 stability_change_a = 7
-stability_change_b = 9
+stability_change_b = -10
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

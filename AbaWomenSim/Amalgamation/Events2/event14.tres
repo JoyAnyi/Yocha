@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://bsav7f074wjts"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_0ibn4"]
+[ext_resource type="Texture2D" uid="uid://bbq16yovergjv" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Nigerians_discuss_politics_in_Lagos_202605130023.jpeg" id="1_jw2xr"]
+
+[resource]
+script = ExtResource("1_0ibn4")
+title = "Growing Political Awareness."
+description = "In Lagos and other Southern cities, educated Nigerians increasingly criticize colonial administration through newspapers and political discussions. Many demand stronger African representation in governance and question decisions being imposed without consultation."
+event_image = ExtResource("1_jw2xr")
+type = "political"
+option_a_text = " Allow greater political discussion"
+option_b_text = " Restrict criticism of colonial policy"
+next_event_index_a = 14
+next_event_index_b = 14
+influence_change_a = 6
+influence_change_b = 12
+stability_change_a = 4
+stability_change_b = -7
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

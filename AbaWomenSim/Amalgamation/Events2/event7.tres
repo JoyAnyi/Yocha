@@ -1,18 +1,20 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://b87el3hp7ll5p"]
 
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_i8ava"]
+[ext_resource type="Texture2D" uid="uid://gtao0cof7yft" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/event7.jpeg" id="1_06ymf"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_024oy"]
 
 [resource]
-script = ExtResource("1_i8ava")
-title = "Nationalists React"
+script = ExtResource("1_024oy")
+title = "Nationalists React."
 description = "Educated elites and newspaper publishers in Lagos begin criticizing the proposed amalgamation. Some fear that the South’s political progress and Western-style institutions may be weakened under a centralized colonial system. Others argue that Nigerians themselves were never consulted about the merger."
+event_image = ExtResource("1_06ymf")
 type = "political"
 option_a_text = " Ignore the criticism and proceed"
 option_b_text = " Consult local representatives"
 next_event_index_a = 7
 next_event_index_b = 7
-influence_change_a = 8
+influence_change_a = 11
 influence_change_b = 5
-stability_change_a = -5
-stability_change_b = 8
+stability_change_a = -7
+stability_change_b = 6
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

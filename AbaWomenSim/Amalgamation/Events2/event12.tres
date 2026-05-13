@@ -1,7 +1,20 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://bkivngfqa5gm7"]
 
 [ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_d5ktq"]
+[ext_resource type="Texture2D" uid="uid://b5l30chxxmk4u" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Colonial_Nigeria_export_economy_…_202605130020.jpeg" id="1_jhfww"]
 
 [resource]
 script = ExtResource("1_d5ktq")
+title = "Trade Before Representation."
+description = "British colonial policy focuses heavily on economic extraction. Palm oil, agricultural exports, railways, and customs revenue become central priorities. Critics argue that economic policies mainly benefit Britain, while supporters claim colonial investment is modernizing infrastructure across the region."
+event_image = ExtResource("1_jhfww")
+type = "political"
+option_a_text = " Prioritize export expansion"
+option_b_text = " Invest more in local welfare"
+next_event_index_a = 12
+next_event_index_b = 12
+influence_change_a = 9
+influence_change_b = 6
+stability_change_a = -4
+stability_change_b = 6
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

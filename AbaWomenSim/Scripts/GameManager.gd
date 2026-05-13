@@ -180,10 +180,10 @@ func _on_button_b_pressed():
 func handle_decision(choice: String):
 	btn_a.disabled = true
 	btn_b.disabled = true
-	if current_event_data.type == "trade":
-		handle_decision(choice)
+	#if current_event_data.type == "trade":
+		#handle_decision(choice)
 
-	elif current_event_data.type == "political":
+	if current_event_data.type == "political":
 		handle_political_event(choice)
 
 	player.record_choice(current_event_data.title, choice)

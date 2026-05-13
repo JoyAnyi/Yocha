@@ -1,18 +1,20 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://nyuv1okmqunx"]
 
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_ipffq"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_oqu6h"]
+[ext_resource type="Texture2D" uid="uid://ct308j6ypshmh" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Colonial_meeting_railway_expansi…_202605130006.jpeg" id="1_t8alr"]
 
 [resource]
-script = ExtResource("1_ipffq")
-title = "The Railway Question"
+script = ExtResource("1_oqu6h")
+title = "Railway Expansion Debate."
 description = "The British administration debates how railway infrastructure should connect the North and South. Some officials support extending railways toward Kano to strengthen trade and political unity. Others argue the projects are too expensive and mainly serve British economic interests rather than Nigerians."
+event_image = ExtResource("1_t8alr")
 type = "political"
 option_a_text = " Expand railway construction"
 option_b_text = " Delay railway expansion"
 next_event_index_a = 8
 next_event_index_b = 8
-influence_change_a = 12
-influence_change_b = 4
+influence_change_a = 9
+influence_change_b = 3
 stability_change_a = -4
 stability_change_b = 5
 metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

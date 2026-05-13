@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dgckxv162cv4w"]
+
+[ext_resource type="Texture2D" uid="uid://b6s6n23vn2uw4" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Colonial_administration_coordina…_202605130041.jpeg" id="1_6kmjf"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_xb4h0"]
+
+[resource]
+script = ExtResource("1_xb4h0")
+title = "One Government Structure."
+description = "Government departments across the protectorates begin merging under centralized oversight in Lagos. Railways, treasury operations, postal systems, and legal departments are increasingly coordinated as one administrative network."
+event_image = ExtResource("1_6kmjf")
+type = "political"
+option_a_text = " Accelerate administrative integration"
+option_b_text = " Slow the unification process"
+next_event_index_a = 16
+next_event_index_b = 16
+influence_change_a = 10
+influence_change_b = 5
+stability_change_a = -5
+stability_change_b = 5
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

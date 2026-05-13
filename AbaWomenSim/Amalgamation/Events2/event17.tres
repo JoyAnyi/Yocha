@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://cujkvia4yc1v1"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_wgnjb"]
+[ext_resource type="Texture2D" uid="uid://cdxa1w4ua7qlq" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Officials_debate_Nigeria_amalgam…_202605130043.jpeg" id="1_wh631"]
+
+[resource]
+script = ExtResource("1_wgnjb")
+title = "Arguments Over Amalgamation."
+description = "British officials continue debating whether amalgamation will truly improve governance. Some warn that combining regions with different systems may create future instability. Others insist that maintaining separate administrations is too costly for the empire."
+event_image = ExtResource("1_wh631")
+type = "political"
+option_a_text = " Proceed despite the risks"
+option_b_text = " Delay the final merger"
+next_event_index_a = 17
+next_event_index_b = 17
+influence_change_a = 12
+influence_change_b = 4
+stability_change_a = -6
+stability_change_b = 6
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

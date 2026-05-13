@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://c6yi20p7u4eg1"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_g5dkd"]
+[ext_resource type="Texture2D" uid="uid://vynh4xojai23" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Screenshot 2026-05-13 at 00.45.13.png" id="1_y8alo"]
+
+[resource]
+script = ExtResource("1_g5dkd")
+title = "The Final Preparations."
+description = "By late 1913, British authorities finalize plans for amalgamation. Official documents, administrative reforms, and public announcements are prepared. While colonial officials celebrate the coming union, many Nigerians remain uncertain about what the merger will mean for their future."
+event_image = ExtResource("1_y8alo")
+type = "political"
+option_a_text = " Publicly promote the merger"
+option_b_text = " Address local concerns first"
+next_event_index_a = 18
+next_event_index_b = 18
+influence_change_a = 9
+influence_change_b = 7
+stability_change_a = -4
+stability_change_b = 5
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

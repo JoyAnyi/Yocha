@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://0xm5kcbe2r6u"]
+
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_hqe4j"]
+[ext_resource type="Texture2D" uid="uid://vfvah65upi3s" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Emir_with_British_officers_202605130022.jpeg" id="1_xiahy"]
+
+[resource]
+script = ExtResource("1_hqe4j")
+title = "Traditional Rulers Under Empire."
+description = "Lugard promotes indirect rule, especially in Northern Nigeria. Instead of replacing local rulers entirely, Britain governs through emirs and traditional authorities. Supporters say this preserves order and stability. Critics argue it limits political modernization and strengthens colonial control indirectly."
+event_image = ExtResource("1_xiahy")
+type = "political"
+option_a_text = " Expand indirect rule"
+option_b_text = " Introduce direct administration"
+next_event_index_a = 13
+next_event_index_b = 13
+influence_change_a = 11
+influence_change_b = 7
+stability_change_a = 5
+stability_change_b = -6
+metadata/_custom_type_script = "uid://bta3yt8x4kxuq"

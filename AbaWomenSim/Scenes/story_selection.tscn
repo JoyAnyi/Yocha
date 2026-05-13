@@ -4,7 +4,7 @@
 [ext_resource type="Script" uid="uid://onfhrtgaubr1" path="res://Yocha/AbaWomenSim/Scripts/StorySelection.gd" id="1_7ahqq"]
 [ext_resource type="FontFile" uid="uid://ctrycnc6rlr2u" path="res://Yocha/AbaWomenSim/Assets/Montreal-Bold.ttf" id="1_ngqtv"]
 [ext_resource type="Texture2D" uid="uid://camvp88qw2025" path="res://Yocha/AbaWomenSim/Images/Women_selling_goods_202603280039.jpeg" id="2_6d853"]
-[ext_resource type="Texture2D" uid="uid://d4fjqq1ny6q8p" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Federick Lugard.webp" id="5_k8jag"]
+[ext_resource type="Texture2D" uid="uid://o4de3yg1b3h1" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/Federick.jpeg" id="5_tr5or"]
 [ext_resource type="FontFile" uid="uid://beg1kkf8su3vh" path="res://Yocha/AbaWomenSim/Assets/Nunito-BlackItalic.ttf" id="6_unupn"]
 
 [sub_resource type="GDScript" id="GDScript_186yi"]
@@ -115,9 +115,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -958.0
-offset_top = -413.0
-offset_right = 445.0
-offset_bottom = 487.0
+offset_top = -383.0
+offset_right = 257.0
+offset_bottom = 447.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
@@ -157,7 +157,7 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_4s1pi")
 
 [node name="TextureRect" type="TextureRect" parent="HBoxContainer/CardAmag" unique_id=1472768405]
 layout_mode = 2
-texture = ExtResource("5_k8jag")
+texture = ExtResource("5_tr5or")
 expand_mode = 1
 stretch_mode = 4
 

@@ -1,11 +1,13 @@
 [gd_resource type="Resource" script_class="HistoricalEvent" format=3 uid="uid://dwdpatl3slu5m"]
 
-[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="1_xc4wt"]
+[ext_resource type="Texture2D" uid="uid://6lwrby8xb5h2" path="res://Yocha/AbaWomenSim/Amalgamation/Images2/event5.jpeg" id="1_i0xy5"]
+[ext_resource type="Script" uid="uid://bta3yt8x4kxuq" path="res://Yocha/AbaWomenSim/Scripts/HistoricalEvent.gd" id="2_b0y3f"]
 
 [resource]
-script = ExtResource("1_xc4wt")
+script = ExtResource("2_b0y3f")
 title = "Sir Frederick Lugard Takes Control."
 description = "In 1912, Sir Frederick Lugard became Governor of both Northern and Southern Nigeria. Britain gave him a major assignment: prepare both protectorates for unification. Lugard believed amalgamation would improve efficiency, strengthen imperial control, and reduce financial problems in the North. However, many officials disagreed about how such a merger should happen."
+event_image = ExtResource("1_i0xy5")
 type = "political"
 option_a_text = "Support Lugard’s unification plans"
 option_b_text = "Proceed cautiously with reforms"
